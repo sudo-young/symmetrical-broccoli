@@ -1,0 +1,202 @@
+\documentclass[aps,preprint,floatfix,nofootinbib,showpacs]{revtex4-1}
+\usepackage{graphicx,color,epstopdf,amsmath,multirow,array,booktabs}
+\usepackage{feyn}
+\usepackage[T1]{fontenc}
+\usepackage{kotex}
+
+\newcommand{\head}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\normal}[1]{\multicolumn{1}{l}{#1}}
+\newcommand{\ev}{{\;{\rm eV}}}
+\newcommand{\kev}{{\;{\rm keV}}}
+\newcommand{\mev}{{\;{\rm MeV}}}
+\newcommand{\gev}{{\;{\rm GeV}}}
+\newcommand{\tev}{{\;{\rm TeV}}}
+\newcommand{\pb}{{\,{\rm pb}}}
+\newcommand{\fb}{{\,{\rm fb}}}
+
+
+
+\begin{document}
+\title{Little Higgs model basic study}
+\bigskip
+\author{So Young Shim$^{1}$}
+\affiliation{
+$^1$DESY, Notkestrasse, Hamburg, 22607, Germany
+}
+\date{\today}
+
+\begin{abstract}
+With the SM, the Higgs self-coupling radiative correction could cause infinite mass of Higgs. 
+It is because there is no symmetry protection for this radiative correction.
+But, in Little Higgs model, introducing extra symmetries 
+to ones of the SM prevent Higgs mass from divergence.
+If integrating out heavy particles in Little Higgs model, 
+some operators look like dim-6 operators.
+Using this, I study the phenomenological part with WHIZARD with dim6 operators.\\
+Little Higgs model 
+\end{abstract}
+
+\maketitle
+
+
+\section{Little Higgs model}
+\label{sec:introduction}
+Generally Little Higgs models have different group structures 
+for global and local gauge symmetries.
+In this kind of models, Higgs is regarded as one of the Nambu Goldstone bosons.
+They have enlarged gauge group structure from that of SM and 
+break the group into the same one with SM. 
+Basically these models have more gauge bosons than the SM does. 
+{\it Gauge bosons come from local gauge group and Nambu Goldstone 
+bosons are from global gauge symmetry breaking.}
+When this breaking occurs, extra heavy gauge bosons appear as well as the SM Higgs show up. 
+% Effective field theory, higher dimensional operators,
+% there is only 1 5-dimensional operator 
+% because of Majorana mass term.
+% But, 6-dimensional operators are various. 
+
+\section{Nambu Goldstone boson}
+According to Goldstone theorem, when each symmetry breaks, a massless particle comes out. 
+In the minimal Standard model, breaking $SU(2)_L \times U(1)_Y$ group 
+into $U(1)_{em}$ makes a Higgs.
+In that case, the number of generators of the group has changed 4 into 1. 
+Then 3 massless particles, 
+i.e. 3 of Nambu Goldstone bosons come out.
+And, these NGBs become the longitudinal component of gauge bosons. 
+Usually, we say this situation as ``NGBs are eaten by gauge bosons''.
+
+And what I read in the ``Understanding the Standard Model'' 
+(author : S.K. OH) was the other way around.
+That is, when the symmetries break into $U(1)_{em}$, 
+its corresponding Goldstone boson come out and 
+one of them is photon, others are eaten by Gauge bosons and then, 
+the left degree of freedom is just for Higgs.
+
+% I am not sure my memory and understanding is correct. 
+Now, I can see the Nambu Goldstone theorem and the book have talked the same thing.
+
+% However, in the Little Higgs model, they consider 
+% the Higgs, scalar gauge bosons as Nambu-Goldstone bosons. 
+% How the group structure look like 
+% before the symmetries breaking really depends on the models.
+
+
+
+\newpage
+\section{the Littlest Higgs model}
+The Littlest Higgs model has $SU(5)/SO(5)$ as global symmetry and $(SU(2)\times U(1))^2$ 
+as local symmetry.
+
+% Honestly, in this part, what I can't understand is 
+% the fact that the d.o.f. are not consistant.
+For global symmetry, the number of d.o.f. of $SU(5)$ is $5^2 -1 = 24$ and 
+that of $SO(5)$ is $\frac{5\times4}{2} = 10$. 
+For local gauge group, they change from $(3+1)\times 2 = 8$ to 4. 
+
+And of course, the group structure of ths SM should be encoded 
+in the group structre before symmetry breaking.
+
+For local gauge symmetry,  $(SU(2)\times U(1))^2$ becomes  $SU(2)\times U(1)$. 
+So, there are 4 additional gauge bosons: $W_H^-, W_H^+, Z_H, A_H$
+
+From global gauge symmetry, $SU(5)$ is broken into $SO(5)$. 14 NGB show up. 
+$2\times2$ are for SM Higgs doublet, $3\times2$ 
+are for scalar triplet which is in the metric breaking $SU(5)$.
+And 4 of them are eaten by the heavy gauge bosons.
+
+{\large{But, in the \it{Pseudo-Axion} paper,}} the authors have some special assumption,
+which is that one $U(1)$ of $(SU(2) \times U(2))^2$ is not gauged. 
+So, there is no heavy photon, $A_H$, but one NGB uneaten, $\eta$ is left .
+
+\newpage
+\section{Pseudo-Axion in the Littlest Higgs model}
+Once I calculated the Higgs mass and pseudoscalar mass 
+with a part of Lagrangian in the $L^2 HM$ paper. 
+But, the Lagrangian was not for Higgs or scalar mass 
+and I made some mistakes for the calculation.
+I got some equtions which looked not very plausible 
+though the results were supposed to be zero. 
+(Every term should have been vanished.) 
+
+Anyway, I start another calculation with the low-energy structure paper for $L^2 HM$. 
+
+
+
+
+\newpage
+\section{the Simplest Little Higgs model}
+The Simplest Little Higgs model has $SU(3)_1\times SU(3)_2$ as global gauge group and 
+$SU(3)\times U(1)$ as local gauge symmetry.
+
+NOW, although I am really confused, JUST let me write down as far as I know.
+
+\subsection{20.Feb.2016 the confusing part }
+So, I think now I understand somehow.
+
+For local gauge structure, it starts with $SU(3)\times U(1)$ 
+which becomes $SU(2)\times U(1)$ after symmetry breaking.
+There are 9 of gauge bosons: $W^-_H, W^+_H, Z_H, W^-, W^+, Z, B, H, \eta$.
+Three of them get mass when the group structure becomes $SU(2)\times U(1)$. 
+Fermions that are doublet in ths SM, also start in the form of triplets. 
+
+There is global gauge group $SU(3)_1\times SU(3)_2$(16), which is going to be broken
+to $SU(2)_L \times U(1)_Y$(4). Counting degree of freedoms, 16 d.o.f becomes 4, {\it i.e.}
+12 of generators are broken. 5 of them are eaten by heavy gauge bosons; $W^-_H, W^+_H, Z_H$
+4 of them will be eaten by SM higgs doublet ($h, h\dagger $)
+
+{\large{Only one NGB should be left but why are there 3 of them left??????}}
+
+
+
+The group's unbroken generators can be 
+parameterized by 
+\begin{equation}
+\label{Sigma0}
+\Sigma_0 = \left( \begin{array}{ccc}
+ & & {\mathbf{1}}_{2 \times 2} \\
+ &1 & \\
+{\mathbf{1}}_{2 \times 2} & &
+\end{array}\right).
+\end{equation}
+
+
+
+\newpage
+\section{Pseudo-Axion in the Simplest Little Higgs model}
+Pseudo-axion appears from NGB fields. Actually, it is one of the NGBs. 
+In case of the SLHM, the corresponding terms live in the metrics 
+which break $SU(3)_1\times SU(3)_2$. 
+The pseudoscalar, $\eta$, occupy diagonal parts of the metric. 
+The symmetry breaking scales for each group are denoted by $f_1, f_2$ and
+for convinience, there is $f^2 = f_1^2+f_2^2$. 
+
+OMG, I am confused again. So, is the metric where the pseudo-axion live 
+generators of the group? 
+Or, a part of the vacuum expectation value which break the symmetry??
+
+\bigskip
+\bigskip
+
+Basically, the scalar particles' mass terms come from their potential. 
+Considering Coleman-Weinberg potential, mass terms of scalar particles can be formed.
+
+In SLHM's CW potential, they depend only on $\mu^2$ term. 
+The mass of Higgs is affected by Coleman-Weinberg potential correction. 
+\begin{equation}
+ m^2_H = -2 (\delta m^2 + m^2_\eta)
+\end{equation}
+where 
+\begin{equation}
+ \delta m ^2 = \frac{-3}{8 \pi^2}(\lambda^2_t m^2_T Log(\frac{\Lambda^2}{m^2_T}) 
+ - \frac{g^2}{4} m^2_{W_H} Log(\frac{\Lambda^2}{m^2_{W_H}}) - 
+ \frac{g^2}{8}(1+t^2)m^2_{Z_H} Log(\frac{\Lambda^2}{m^2_{Z_H}}))
+\end{equation}
+and 
+\begin{equation}
+ m_\eta = \sqrt{\kappa}\mu
+\end{equation}
+
+
+
+\end{document}
+% 
