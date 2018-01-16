@@ -1,0 +1,104 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for PhD Thesis at Hamburg University
+%
+% \file appendix.tex
+%
+% Author: Markus Ebert
+%
+% Copyright: (c) Markus Ebert, 2017
+%    This work may be freely used, modified and redistributed.
+%    Good luck with your PhD!
+%
+% Description:
+%    Appendix.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Dimension-6 operators in \whizard}
+\label{app:notation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{How to implement new vertices into \whizard}
+
+% Look up whether there is the vertex which consists of the same particles. 
+% If there is, you can just use it.
+% If not, you should define yourself. 
+
+
+In WHIZARD, the parts that should be modified for implementation 6-dimensional operators are 7 files.
+In \texttt{/trunk/omega/src} directory, the files are \texttt{omegalib.nw, targets.ml, modellib\_SM.ml, couplings.mli}, and 
+\texttt{colorize.mli}. \texttt{omegalib.nw} includes funtions for vetices. 
+If you have new Lorentz structure, you should make and
+define new vertex funtions by LSZ reduction theorem. 
+\texttt{targets.ml} have a distrubution role for the vertex funtions. 
+It distributes particles' Lorentz index numbers and corresponds the functions
+to the Lorentz structures' name in \texttt{modellib\_SM.ml}. 
+\texttt{ modellib\_SM.ml} defines vertices kinds, particles, Lorentz structures, and coupling coefficients.
+In \texttt{/trunk/share/models/} directory, \texttt{ SM\_ac.ml}, 
+which defines parameters such as Wilson coefficients.
+And, in \texttt{ /trunk/src/models/} directory, \texttt{parameters.SM\_ac.f90}. 
+In this file, you can specify the coupling coefficients how to calculate. 
+
+\subparagraph{Steps of writing code for WHIZARD} are the below.
+\begin{enumerate}
+ \item \texttt{/trunk/omega/src/omegalib.nw} : define functions for Lorentz structures.
+ \item \texttt{/trunk/omega/src/targets.ml} : define the name of Lorentz structures for using in modellib\_SM file and write {\it fail} messages for OVM. 
+ \item \texttt{/trunk/omega/src/couplings.mli} : for LaTeX
+ \item \texttt{/trunk/omega/src/colorize.ml} : informations for {\it (coupling coefficient)* (color factor)}
+ \item \texttt{/trunk/omega/src/modellib\_SM.ml} : define vertices with coupling coefficients and the name of Lorentz structurers
+ \item \texttt{/trunk/share/models/SM\_ac.ml} : initialize the Wilson coefficients 
+ \item \texttt{/trunk/src/models/parameters.SM\_ac.f90} : specify the coupling coefficients. Note that when defining the variables in this file, 
+ they shoud be in the same order in the \texttt{/trunk/share/models/SM\_ac.ml}, or some variables could have completely different values.
+\end{enumerate}
+
+\subparagraph{Make and make install}
+After modifying all of these files properly, going to build directory, and type {\it \$ make} and {\it \$ make install}.
+If it shows error messages, you should find where the error is and modify it.
+Or, you can move to compatability test. 
+\begin{table}
+ \begin{tabular}{@{}l*2{>{\:}l} l<{}@{}}
+%  {c|c|c|c}
+%   \toprule[1.5pt]
+  & \multicolumn{1}{c}{Particles} &
+    \multicolumn{2}{c}{Operators}\\
+%   & \normal{\head{Command}} &
+%   \normal{\head{Declaration}} & \normal{}\\
+%   \cmidrule(lr){2-3}\cmidrule(l){4-4}
+  Triple Vertices &  $(\gamma_1, \gamma_2, H_3)$ && $\mathcal{O}_{\Phi B}$ \\
+  &  $(\gamma_1, H_2, Z_3)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{DB}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$, $\mathcal{O}_{\Phi B}$\\
+  &  $(\gamma_1, W^{-}_2, W^{+}_3)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$, $\mathcal{O}_{W}$\\
+  &  $(H_1, H_2, H_3)$ && $\mathcal{O}_{6}$, $\mathcal{O}_{\Phi}$\\
+  &  $(H_1, W^{-}_2, W^{+}_3)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$\\
+  &  $(H_1, Z_2, Z_3)$ && $\mathcal{O}_T$, $\mathcal{O}_{DW}$, $\mathcal{O}_{DB}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$, $\mathcal{O}_{\Phi B}$\\
+  &  $(W^{-}_1, W^{+}_2, Z_3)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$, $\mathcal{O}_{W}$\\
+%   \bottomrule[1.5pt]
+ \end{tabular}
+\end{table}
+
+% 
+\begin{table}
+\begin{tabular}{@{}l*2{>{\:}l} l<{}@{}}
+  & \multicolumn{1}{c}{{Particles}} &
+    \multicolumn{2}{c}{{Operators}}\\
+%   & \normal{\head{Command}} &
+%   \normal{\head{Declaration}} & \normal{}\\
+%   \cmidrule(lr){2-3}\cmidrule(l){4-4}
+  Quartic Vertices &  $(\gamma_1, \gamma_2, H_3, H_4)$ && $\mathcal{O}_{\Phi B}$ \\
+  &  $(\gamma_1, \gamma_2, W^{-}_3, W^{+}_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{W}$ \\
+  &  $(\gamma_1, H_2, H_3, Z_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{DB}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$, $\mathcal{O}_{\Phi B}$\\
+  &  $(\gamma_1, H_2, W^{-}_3, W^{+}_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$\\
+  &  $(\gamma_1, W^{-}_2, W^{+}_3, Z_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{W}$\\
+  &  $(H_1, H_2, H_3, H_4)$ && $\mathcal{O}_{6}$, $\mathcal{O}_{\Phi}$\\
+  &  $(H_1, H_2, W^{-}_3, W^{+}_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$\\
+  &  $(H_1, H_2, Z_3, Z_4)$ && $\mathcal{O}_T$, $\mathcal{O}_{DW}$, $\mathcal{O}_{DB}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$, $\mathcal{O}_{\Phi B}$\\
+  &  $(H_1, W^{-}_2, W^{+}_3, Z_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{D\Phi B}$\\
+  &  $(W^{-}_1, W^{+}_2, W^{-}_3, W^{+}_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{W}$\\
+  &  $(W^{-}_1, W^{+}_2, Z_3, Z_4)$ && $\mathcal{O}_{DW}$, $\mathcal{O}_{D\Phi W}$, $\mathcal{O}_{W}$\\
+%   \bottomrule[1.5pt]
+\end{tabular}
+\end{table}
+\section{How to use the dimension-6 operators in \whizard}
+
+here is an example for using 6 dimensional operatros.
+
+Model: SM-6dim

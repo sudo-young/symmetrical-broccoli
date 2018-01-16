@@ -1,0 +1,292 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for PhD Thesis at Hamburg University
+%
+% \file packages.tex
+%
+% Author: Markus Ebert
+%
+% Copyright: (c) Markus Ebert, 2017
+%    This work may be freely used, modified and redistributed.
+%    Good luck with your PhD!
+%
+% Description:
+%  This file contains all included packages and self-defined commands.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}                         % font: lmodern
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{subcaption}
+% \usepackage{tabularx}
+\usepackage{makecell, tabularx}
+\usepackage{slashed}
+\usepackage[
+        pdftex,
+        pdftitle={PhD Thesis - \theauthor},
+        pdfauthor={\theauthor},
+        colorlinks=false,
+%         hidelinks,
+        urlcolor=blue,
+        linkcolor=blue,
+        citecolor=violet
+]{hyperref}
+\usepackage[ngerman,english]{babel}
+\usepackage{braket}
+\usepackage{cite}       % Groups reference together, e.g. 1-3
+% \usepackage[notref,notcite]{showkeys}
+\usepackage{placeins}
+\usepackage{array}
+\usepackage{bbold}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{multirow}
+% epstopdf,
+\usepackage{units}
+
+
+\renewcommand{\arraystretch}{1.4}
+\renewcommand{\tabularxcolumn}[1]{>{\centering\arraybackslash}p{#1}}
+\setcellgapes{3pt}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Useful commands
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\note}[1]{{\color{orange}\textbf{Note:} #1}}
+\newcommand{\more}[1]{{\color{blue}\textbf{More:} #1}}
+\newcommand{\SCETI}{\texorpdfstring{SCET\textsubscript{I}}{SCET-I}}
+\newcommand{\SCETII}{\texorpdfstring{SCET\textsubscript{II}}{SCET-II}}
+
+% Highlight formulas
+% \newcommand{\highlight}[1]{\colorbox{lightgray!40}{$\displaystyle #1$}}
+% \newcommand{\highlight}[1]{#1}
+
+% Calligraphic letters
+\def\cA{\mathcal{A}}
+\def\cB{\mathcal{B}}
+\def\cC{\mathcal{C}}
+\def\cD{\mathcal{D}}
+\def\cE{\mathcal{E}}
+\def\cF{\mathcal{F}}
+\def\cG{\mathcal{G}}
+\def\cH{\mathcal{H}}
+\def\cI{\mathcal{I}}
+\def\cJ{\mathcal{J}}
+\def\cK{\mathcal{K}}
+\def\cL{\mathcal{L}}
+\def\cM{\mathcal{M}}
+\def\cN{\mathcal{N}}
+\def\cO{\mathcal{O}}
+\def\cP{\mathcal{P}}
+\def\cQ{\mathcal{Q}}
+\def\cR{\mathcal{R}}
+\def\cS{\mathcal{S}}
+\def\bS{\mathbb{S}}
+\def\cT{\mathcal{T}}
+\def\cU{\mathcal{U}}
+\def\cV{\mathcal{V}}
+\def\cJ{\mathcal{J}}
+\def\cW{\mathcal{W}}
+\def\cX{\mathcal{X}}
+\def\cY{\mathcal{Y}}
+\def\cZ{\mathcal{Z}}
+
+% References
+\DeclareRobustCommand{\eq}[1]{eq.~\eqref{eq:#1}}
+\DeclareRobustCommand{\eqs}[2]{eqs.~\eqref{eq:#1} and \eqref{eq:#2}}
+\DeclareRobustCommand{\fig}[1]{fig.~\ref{fig:#1}}
+\DeclareRobustCommand{\figs}[2]{figs.~\ref{fig:#1} and \ref{fig:#2}}
+\DeclareRobustCommand{\chap}[1]{chapter~\ref{chap:#1}}
+\DeclareRobustCommand{\app}[1]{appendix~\ref{app:#1}}
+\DeclareRobustCommand{\sec}[1]{sec.~\ref{sec:#1}}
+\DeclareRobustCommand{\secs}[2]{secs.~\ref{sec:#1} and \ref{sec:#2}}
+\DeclareRobustCommand{\tbl}[1]{table~\ref{tab:#1}}
+\DeclareRobustCommand{\mycite}[1]{ref.~\cite{#1}}
+\DeclareRobustCommand{\mycites}[1]{refs.~\cite{#1}}
+
+% Common vectors
+\newcommand{\kcut}{k_\mathrm{cut}}
+\newcommand{\xcut}{x_\text{max}}
+\newcommand{\ptcut}{p_T^\mathrm{cut}}
+\newcommand{\pTcut}{p_T^\mathrm{cut}}
+\newcommand{\pTjet}{p_T^\mathrm{jet}}
+\newcommand{\ETiso}{E_T^\mathrm{iso}}
+\newcommand{\delY}{\Delta Y}
+\newcommand{\pt}{\vec{p}_T}
+\newcommand{\pti}[1]{\vec{p}_{T,#1}}
+\newcommand{\qt}{\vec{q}_T}
+\newcommand{\kt}{\vec{k}_T}
+\newcommand{\bt}{\vec{b}_T}
+\renewcommand{\b}{\vec{b}}
+\newcommand{\ki}[1]{{\vec k}_{#1}}
+\newcommand{\ka}{\ki{a}}
+\newcommand{\kb}{\ki{b}}
+\newcommand{\ks}{\ki{s}}
+\newcommand{\eps}{\epsilon}
+
+\newcommand{\vev}{\textit{vev}\xspace}
+\newcommand{\vevs}{\textit{vev}s\xspace}
+\newcommand{\lam}{\lambda}
+\newcommand{\Lam}{\Lambda}
+\newcommand{\lsim}{\stackrel{<}{\sim}}
+\newcommand{\gsim}{\stackrel{>}{\sim}}
+\newcommand{\LamRpV}{\Lambda_{\not R_p}}
+\newcommand{\ETmiss}{\not\!\!E_T}
+\newcommand{\ETmissx}{\not\!\!\!E_T}
+%{\cancel{\it{E}}_T}
+
+% Mathematical operators
+\let\oldvec\vec      % Redefine \vec such that arrow is centered correctly centered
+\renewcommand*\vec[1]{\oldvec{\kern0pt #1}}
+\DeclareMathOperator{\dis}{\!|_+}      % distributional scale setting
+\newcommand{\nn}{\nonumber}
+\newcommand{\FT}{\mathrm{FT}}
+\newcommand{\del}{\mathrm{d}}
+\newcommand{\df}{\mathrm{d}}
+\newcommand{\timeOrdering}{\mathrm{T}}
+\newcommand{\antitimeOrdering}{\overline{\mathrm{T}}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\Ecm}{E_\mathrm{cm}}
+\newcommand{\gamgam}{{\gamma\gamma}}
+
+% Special quantities
+\newcommand{\MS}{$\overline{\text{MS}}$}
+\newcommand{\pb}{\text{pb}}
+\newcommand{\fb}{\text{fb}}
+\newcommand{\GeV}{\text{GeV}}
+\newcommand{\TeV}{\text{TeV}}
+\newcommand{\dR}[2][2]{R_{#1}^{(#2)}}     %Symbol for n-th derivative of V; optional argument is 1 or 2 (for dimension)
+\newcommand{\dRc}[2][2]{\tilde R_{#1}^{(#2)}}   %Conjugate function to dR; only makes sense for d=1
+\newcommand{\LQCD}{\Lambda_\text{QCD}}
+
+% Abbreviations for the RGE quantities
+\newcommand{\GammaC}{\Gamma_\text{cusp}}
+\newcommand{\gMuH}{\gamma_{H}}                  % Hard mu anom dim
+\newcommand{\gMuHconst}[1]{\gamma_{H\,#1}}   % The n-th constant piece of the hard mu anom dim
+\newcommand{\gMuB}{\gamma_B}                 % Beam mu anom dim
+\newcommand{\gMuBconst}[1]{\gamma_{B\,#1}}   % The n-th constant piece of the beam mu anom dim
+\newcommand{\gMuBCNC}[1]{\gMuBconst{#1}}           % compatibility to notes
+\newcommand{\gMuS}{\gamma_S}                 % Soft mu anom dim
+\newcommand{\gMuSconst}[1]{\gamma_{S\,#1}}   % The n-th constant piece of the soft mu anom dim
+\newcommand{\gMuSCNC}[1]{\gMuSconst{#1}}           % compatibility to notes
+\newcommand{\gNu}{\gamma_\nu}                      % Nu anom dim: Only one, we choose gNu = gNu(soft)
+\newcommand{\tgNu}{\tilde\gamma_\nu}
+\newcommand{\gNuNP}{\gamma_\nu^{\text{(np)}}}                      % Nu anom dim: Only one, we choose gNu = gNu(soft)
+\newcommand{\gNuC}[1]{\gamma_{\nu}^{(#1)}}         % The n-th term of gammaNu in the aS-expansion
+\newcommand{\gNuConst}[1]{\gamma_{\nu\,#1}}         % The n-th constant piece of the nu anom dim
+\newcommand{\gNuConstB}[1]{\tilde\gamma_{\nu\,#1}}         % The n-th constant piece of the nu anom dim from b-space
+\newcommand{\gNuCNC}[1]{\gNuConst{#1}}             % compatibility to notes
+
+% Some alphas abbreviations
+\newcommand{\aem}{\alpha_\mathrm{em}}
+\newcommand{\as}{\alpha_s}
+\newcommand{\asmu}{\alpha_s(\mu)}         %as with mu dependence
+\newcommand{\AS}{\Bigl(\frac{\as}{4\pi}\Bigr)}     %as/4pi including brackets
+\newcommand{\ASmu}{\biggl[\frac{\as(\mu)}{4\pi}\biggr]}  %as before, with mu depenendence
+
+\newcommand{\LL}[1]{N\textsuperscript{#1}LL}
+
+% perp label operators
+\newcommand{\cPperp}{\hat \cP_{\!\perp}}
+\newcommand{\cPperpn}{\cP_{\!\perp n}}
+\newcommand{\cPperpbn}{\cP_{\!\perp \bar{n}}}
+\newcommand{\cPperps}{\cP_{\!\perp s}}
+% lightcone label operators
+\newcommand{\cPbar}{\overline{\cP}}
+\newcommand{\cPbarn}{\overline{\cP}_{n}}
+\newcommand{\cPbarbn}{\overline{\cP}_{\bar n}}
+\newcommand{\cPbars}{\overline{\cP}_{s}}
+
+\newcommand{\id}{\mathbb{1}}
+
+% labels
+\newcommand{\FO}{\mathrm{FO}}
+\newcommand{\incl}{\mathrm{incl}}
+\newcommand{\res}{\mathrm{res}}
+\newcommand{\EFT}{\mathrm{EFT}}
+\newcommand{\rEFT}{\mathrm{rEFT}}
+\newcommand{\mufo}{\mu_\mathrm{FO}}
+\newcommand{\muns}{\mu_\mathrm{ns}}
+\newcommand{\prof}{f_\mathrm{run}}
+\newcommand{\vary}{f_\mathrm{vary}}
+
+\newcommand{\img}{\mathrm{i}}
+% Define a superimposed int/sum
+\DeclareMathOperator*{\SumInt}{%
+\mathchoice%
+  {\ooalign{$\displaystyle\sum$\cr\hidewidth$\displaystyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.14\height}{\scalebox{.7}{$\textstyle\sum$}}\cr\hidewidth$\textstyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\int$\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\int$\cr}}
+}
+
+\newcommand{\gauge}[1]{\stackrel{#1}{\xrightarrow{\hspace*{0.5cm}}}}
+
+\newcommand{\whizard}{\texttt{WHIZARD}\xspace}
+\newcommand{\Delphes}{\texttt{Delphes}\xspace}
+\newcommand{\Madgraph}{\texttt{MadGraph}\xspace}
+\newcommand{\Feynrules}{\texttt{FeynRules}\xspace}
+\newcommand{\Pythiaeight}{\texttt{Pythia 8}\xspace}
+\newcommand{\Pythia}{\Pythiaeight \xspace}
+\newcommand{\Fastjet}{\texttt{FastJet}\xspace}
+\newcommand{\Atlas}{\texttt{ATLAS}\xspace}
+\newcommand{\Cms}{\texttt{CMS}\xspace}
+\newcommand{\Checkmate}{\texttt{CheckMATE}\xspace}
+
+\newcommand{\Sarah}{\texttt{SARAH}}
+\newcommand{\Spheno}{\texttt{SPheno}}
+
+\newcommand{\LHAPDF}{\texttt{LHAPDF6}}
+\newcommand{\SCETlib}{\texttt{SCETlib}}
+\newcommand{\Mathematica}{\texttt{Mathematica}}
+\newcommand{\MCFM}{\texttt{MCFM}}
+\newcommand{\MMHT}{\texttt{MMHT2014nnlo68cl}}
+\newcommand{\qqgamgam}{$q\bar{q}{\to}\gamgam$}
+\newcommand{\gggamgam}{$gg{\to}\gamgam$}
+
+\newcommand{\fu}{\emph{Fermion Universal}}
+\newcommand{\hq}{\emph{Heavy $q_H$}}
+\newcommand{\lil}{\emph{Light $\ell_H$}}
+
+% order counting
+% \(n)lo*: fixed order
+\def\lo*{\text{LO}}
+\def\nlo*{\text{NLO}}
+\def\nnlo*{\text{NNLO}}
+\def\nnnlo*{\text{\texorpdfstring{N\textsuperscript{3}LO}{N3LO}}}
+\def\nNlo*{\text{\texorpdfstring{N\textsuperscript{$n$}LO}{N$n$LO}}}
+
+% \(n)llog*: simple log counting
+\def\llog*{\text{LL}}
+\def\nllog*{\text{NLL}}
+\def\nnllog*{\text{NNLL}}
+\def\nnnllog*{\text{\texorpdfstring{N\textsuperscript{3}LL}{N3LL}}}
+\def\nNllog*{\text{\texorpdfstring{N\textsuperscript{$n$}LL}{N$n$LL}}}
+
+% \(n)llphi*: subscript phi
+   % catch pdfstrings
+\def\llphi*{\texorpdfstring{\ensuremath{\text{LL}_\varphi}}{LLphi}}
+\def\nllphi*{\texorpdfstring{\ensuremath{\text{NLL}_\varphi}}{NLLphi}}
+\def\nnllphi*{\texorpdfstring{\ensuremath{\text{NNLL}_\varphi}}{NNLLphi}}
+\def\nnnllphi*{\texorpdfstring{\ensuremath{\text{N\textsuperscript{3}LL}_\varphi}}{N3LLphi}}
+\def\nNllphi*{\texorpdfstring{\ensuremath{\text{N\textsuperscript{$n$}LL}_\varphi}}{N$n$LLphi}}
+
+% \(n)llpphi* subscript phi and superscript prime
+   % catch pdfstrings
+\def\llpphi*{\texorpdfstring{\ensuremath{\text{LL}^\prime_\varphi}}{LL'phi}}
+\def\nllpphi*{\texorpdfstring{\ensuremath{\text{NLL}^\prime_\varphi}}{NLL'phi}}
+\def\nnllpphi*{\texorpdfstring{\ensuremath{\text{NNLL}^\prime_\varphi}}{NNLL'phi}}
+\def\nnnllpphi*{\texorpdfstring{\ensuremath{\text{N\textsuperscript{3}LL}^\prime_\varphi}}{N3LLphi}}
+\def\nNllpphi*{\texorpdfstring{\ensuremath{\text{N\textsuperscript{$n$}LL}^\prime_\varphi}}{N$n$LLphi}}
+
+% \(n)llmatched* FO of matching, subscript phi, superscript prime
+\def\llmatched*{\ensuremath{\lo*$+$\llpphi*}}
+\def\nllmatched*{\ensuremath{\nlo*$+$\nllpphi*}}
+\def\nnllmatched*{\ensuremath{\nnlo*$+$\nnllpphi*}}
+\def\nnnllmatched*{\ensuremath{\nnnlo*$+$\nnnllpphi*}}
+\def\nNllmatched*{\ensuremath{\nNlo*$+$\nNllpphi*}}

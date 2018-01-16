@@ -1,0 +1,376 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\chapter{Phenomenology of LHT at the LHC}
+\label{chap:LHTsetup}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% 
+\section{ processes, reasons, production cross section, branching ratio}
+
+\paragraph{processes with new particles}
+We consider 6 processes for studying this model.  
+\begin{enumerate}
+\item $p p \rightarrow q_H q_H, q_H \bar{q}_H, \bar{q}_H \bar{q}_H$,
+\item $p p \rightarrow q_H V_H$,
+\item $p p \rightarrow f_H \bar{f}_H$
+\item $p p \rightarrow V_H V_H$,
+\item $p p \rightarrow T_+ T_+, T_- T_-$
+\item $p p \rightarrow T_+ \bar{q}, \bar{T}_+ q, T_+ W^\pm, \bar{T}_+ W^\pm$
+\end{enumerate}
+% 왜 이 프로세스를 선택했는가. 이 프로세스의 특징은 무엇인가. ... 
+These are regarded as the major production channels of LHT particles in the LHC.
+
+Here, we will refer to T-parity odd quarks, $\left\{u_H,~d_H,~c_H,~s_H,~b_H,~t_H\right\}$, as $q_H$; 
+heavy gauge bosons, $\left\{ A_H, Z_H, W_H \right\}$, as $V_H$; and
+T-parity odd leptons, $\left\{ e_H, \nu_H, \tau_H, \mu_H \right\}$ as $\ell_H$. 
+They are produced and decay into a plethora of sets with a variety of possibility. 
+To analyse the LHT model, we set benchmark scenarios with several assumptions.
+
+% For T-parity conservation, all of T-parity odd particles are produced in pairs. 
+% Among LHT particles, only $T_+$ introduced as a cancellon for Higgs-top loop divergence cancellation
+% can be produced in association with SM particles because $T_+$ is T-parity even like SM particles. 
+% \note{procduction crosssection plot.}
+% Their production cross sections are  monotone decreasing functions, 
+% which decrease with $f$ increaseing because
+% all of the particles' masses are proportional to $f$.  
+%  
+% 
+% \paragraph{Decay channels}
+% \note{Branching ratio} \note{Decay channel table}
+% 
+% T-odd quark $q_H$ decays into heavy gauge boson $V_H$ and SM quark, 
+% if the process is kinematically allowed. 
+% % and more into $W_H~q$ than $Z_H~q$ or $A_H~q$.
+% % because of electric charge
+% Although $V_H$ have several decay channels, under the such condition
+% the dominant decay is $A_H$ related ones 
+% like $W_H \rightarrow A_H W$, $Z_H \rightarrow A_H H$.  
+% If $A_H$ does not decay as the lightest T-parity odd particle,
+% the major final state of $q_H$ decay would be SM gauge boson and jets with the missing transverse momentum.
+%  
+% Regarding of $V_H$ they can also decay to $q_H$ and SM quark 
+% under the circumstance such as $M_{V_H} > M_{q_H}$. 
+% And $q_H \rightarrow A_H q$ decays are following. 
+% The major final state of the decay would be jets and the missing transverse momentum. 
+% 
+% 
+% Thus, the signals to test LHT are various and it is dominantly up to the mass of $q_H$.
+% So, We have studied this model with respect to the parameters:
+% the center of mass energy $\sqrt{s}$ , the symmetry breaking scale $f$ and 
+% the Yukawa coupling parameter of the extended LHT group $\kappa_q$, $\kappa_\ell$
+% % The procduction processes have a variety of final state 
+% % depending on the kinematical enviorenment and parameter scale. 
+% 
+
+
+
+\section{Benchmark scenarios}
+
+We distinguish three cases with respect to three model parameters:$f$, $\kappa_q$, and $kappa_\ell$, where $f$ is the symmetry breaking scale of the extended group of LHT;
+$\kappa_q$ refers to the Yukawa coupling parameter of T-parity odd quarks $q_H$; and $\kappa_\ell$ is the Yukawa coupling parameter of T-odd leptons $\ell_H$. 
+These are the parameters giving rise to mass terms of the LHT particles $q_H, V_H$ and $\ell_H$.
+Also, each of them is considered with \emph{conserved T-parity} and with \emph{violated T-parity}. 
+
+
+\subsection{Fermion universality model}
+First, the \fu~model has an assumption that the $\kappa_q$ and $\kappa_\ell$ are equal. 
+
+We have scanned for the parameter space $(f,\kappa)$ where $\kappa~=~\kappa_q~=~\kappa_\ell$. 
+Even if the T-odd fermion sectors have the similar mass spectrum, 
+the production cross section related colour-charged fermions is much larger than that of the fermions colour neutral. 
+The variation of $f$ makes change to the mass of LHT particles, while that of $\kappa$ has effects only on T-odd fermions mass. 
+As we can see in the comparison of the \eqs{LHT:VH}{LHT:qH}, if the $\kappa$ is less than $0.4$, 
+it becomes true that $M_{V_H} > M_{q_H}$, so $W_H$ and $Z_H$ decays are fermionic. 
+Otherwise, $M_{q_H}$ gets heavier than $M_{V_H}$, so we will see $q_H$ decay to $V_H$. 
+
+% \note{FINE TUNNING PROBLEM }; in the region where $f$ is ``small'', there is not so fine-tuned area. 
+% I want to talk about that too.
+
+\subsection{Heavy $q_H$ model}
+Second, the \hq~model assumes T-parity odd quarks $q_H$ are decoupled in the detectable limits as well as heavier than T-parity odd leptons $\ell_H$,
+which results from fixing $\kappa_q = 4.0 $. 
+as in the \eqs{LHT:qH}{LHT:lH}, T-parity odd fermions mass terms are proportional to $\kappa_q,~ \kappa_\ell$. 
+\begin{align}
+ M_{u_H}=\kappa_q f (1+corrections) , M_{d_H}= \kappa_q f \nonumber \\
+ M_{\ell_H} = \kappa_\ell f 
+\end{align}
+
+With the larger value of $\kappa_q$, $q_H$'s mass is getting much heavier to muli-TeV-scale.
+So, $q_H$ is decoupled in the energy level where we looking at and 
+it is not possible to detect them in the LHC, which makes we observe effects from other particles which was covered and hiden by $q_H$'s interactions. 
+Thus, we can have insight for colour-neutral T-odd particles interactions.
+
+\subsection{Light $\ell_H$ model}
+Lastly, for the \lil~model, we fix $\kappa_\ell = 0.2$, which makes $\ell_H$ very light. 
+This permits for more particles to decay into lectonic state. 
+Especially, heavy gauge bosons $V_H$ are expected to decay into $\ell_H$ and 
+it would be interesting to observe how the bounds be changed from that of the \fu~model.
+
+
+\subsection{R dependence of $T^\pm$}
+$T^\pm$'s mass terms \eq{LHT:Tpm} depend on $f$ and $R$, where $R$ is the ratio o the Yukawa coupling parameters $\lam_1/\lam_2$.
+We do not scan about $R$ but consider two cases: $R~=~1$ and $R~=~0.2$ where $T^\pm$ is light or heavy so that $T^\pm$ is decoupled. 
+When $R$ is equal to 0.2, $T^\pm$ becomes too heavy to be accessed by the LHC experiments.
+\more{MAYBE the plot of $T^\pm$ mass for this?}
+
+
+\section{T-parity violation}
+Until now, we only discussed about the case that $A_H$ does not decay because it is the lightest T-odd particle and stable thanks to T-parity conservation. 
+As we discussed in \sec{LHT:TPV},
+it is possible to introduce the decays of $A_H$ by the gauge anomaly terms. 
+
+As in the \eqs{LHT:TPVww}{LHT:TPVzz}, $A_H$ can decay into $WW$ and $ZZ$. 
+Also, taking loop-induced diagrams into account as in \eq{LHT:TPVff}, fermionic decays can appear. 
+
+\note{Feynman DIAGRAMS!!}
+
+Although there are no more invisible particle assumed,
+Supersymmetry motivated searches are expected to use for analysing for this case
+because there are still notable amount of the transverse missing momentum thanks to 
+the leptonic decays $(\ell,\nu)$ of $W$ boson and the invisible decay $(\nu,\nu)$ of $Z$ boson.
+
+
+
+\section{CheckMATE}
+For testing this model, CheckMATE was used.
+CheckMATE is an automatised program to test new physics at the LHC.
+From \Feynrules model file, UFO model file, 
+it can manage event generating, showering and hadronising by making use of \Madgraph, 
+\Pythia and \Delphes. 
+
+It determines the signal
+
+
+\note{SHOULD rewrite the following}
+
+For the main tasks of this numerical study, we make use of the collider analysis tool \Checkmate{} \cite{??}. 
+This program is useful to test a given BSM model in an automatised way. 
+It makes again use of the aforementioned  generator \Madgraph to simulate partonic events. 
+By making use of the \texttt{UFO} model description file format, \Madgraph is able to 
+simulate partonic events for a given BSM model which was implemented in a model building framework
+ like \Feynrules or \Sarah. The showering and hadronisation of these events is
+ subsequently performed by \Pythia, followed by the fast detector simulation \Delphes
+ which considers the effect of measurement uncertainties, finite reconstruction efficiencies 
+and the jet clustering of the observed final state objects. 
+These detector events are then quantified by various analyses from both \Atlas and \Cms
+at centre-of-mass energies of 8 and 13 TeV (more details below). 
+Events are categorised in different signal regions and \Checkmate{} determines 
+which signal region provides the strongest expected limit. 
+If the input model predicts more signal events than are allowed by the observed limit of 
+that signal region, \Checkmate{} concludes that the model is \emph{excluded} at the 95\% confidence level, 
+otherwise the model is \emph{allowed}. 
+For more details on the inner functionality of CheckMATE, we refer to the manual papers in Refs.\cite{??}. 
+
+\more{Credential Limit !}
+
+
+
+\section{Final state topologies}
+
+To have comprehensive view of the result plots, 
+I need to discuss about topological aspects of LHT particle productions and decays.
+
+
+\subsection{the production cross sections}
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedk_crosssections13}  \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedf_crosssections13}
+\caption{\more{rewrite this}LHC production cross sections ($\sqrt{s} = \unit[13]{TeV}$) for benchmark models \emph{Fermion Universality/Light $\ell_H$} + \emph{Light $T^\pm$}. 
+Left: Dependence on $f$ for fixed $\kappa=1.0$ (solid), $\kappa=2.0$ (dashed). Right: Dependence on $\kappa$ for fixed $f=\unit[1]{TeV}$ (solid), $f=\unit[2]{TeV}$ (dashed).  
+Labels in the legend appear in decreasing order of the respective maximum value of the solid lines.}
+\label{fig:xs:univ}
+% \end{figure*}
+% % \begin{figure*}
+\includegraphics[width=0.45\textwidth]{figures/xsbr/kq4_fixedk_crosssections13} \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/kq4_fixedf_crosssections13}
+\caption{Same as Fig.~\ref{fig:xs:univ} for benchmark model \emph{Heavy $q_H$} + \emph{Light $T^\pm$}.}\label{fig:xs:kq4}
+\end{figure*}
+%\note{how the cross section get change w.r.t. the scenarios}\\
+We show the production cross section plots with respect to $f$ or $\kappa$ in \figs{xs:univ}{xs:kq4}
+where $\sqrt{s}=\unit[13]{TeV}$. 
+Since colour neutral fermions $\ell_H$ do not play a crucial role on the production cross section on the LHC, 
+changing $\kappa_\ell$ to $0.2$ does not affect to the cross section very much. 
+Thus, the production cross section plot of the \fu~model with $\kappa~=~\kappa_q~=~\kappa_\ell$ and that of \lil~model are just alike 
+and their cross section plots are shown together. 
+Regarding to top partners $T^\pm$, if $T^\pm$ is heavy and in the decoupling limits, $T^\pm$ can hardly afftect on the cross section. 
+So, we only show the plots with \emph{light} $T^\pm$ case for cross sections which is experimentally accessible. 
+Also, they are only the case of \emph{TPC} because \emph{TPV} cases have rarely effects on the production cross sections.
+
+
+All the mass of the LHT particles are proportional to $f$, which cause that the cross sections of processes decrease as $f$ increases by kinematical reason. 
+Only $q_H$ and $\ell_H$ are affected by $\kappa$ because only their masses depend on $\kappa$. 
+$T^\pm$ have dependence on $R$ as well as $f$, but we scanned the processes with fixed $R$ values, 
+so we observe $f$ dependence only for $T^\pm$.
+And the cross section of the processes related with $T^\pm$ is flat in the $(\kappa, \sigma)$ plot.
+
+% % VH 
+
+Interestingly, even though mass terms of $V_H$ depend only on $f$, we can find a small $\kappa$-dependence from $V_H V_H$ channel of the \fu~model
+in the right one of \fig{xs:univ}. This is the effect of $q_H$ in t-channel production that counteract s-channel diagrams. 
+% \more{It is because of contributions of $q_H$ in t-channel production of $V_H$ pairs,
+% which interfere destructively Drell-Yan-like s-channel vector boson diagrams. }
+% % 
+This effect is observed where $\kappa~\approx~0.5$ regardless to $f$,
+which results in the fact that the production cross section of $V_H$ pair when $\kappa \approx 0.5$ is less than 5 times
+in comparison to when there is no effect by this t-channel $q_H$ where $\kappa > 4$ since $q_H$ is decoupled. 
+Also by the same reason, in the \fig{xs:kq4} the \hq~model, this effect disappears since $q_H$ are decoupled by construction. 
+
+The production cross section values are roughly $10^3$ fb at most  
+and we expect that the LHC can probe the parameter space sensitively in $\sqrt{s} = \unit[13]{TeV}$. 
+Furthermore, the cross section is order \unit[$10^{-1}$]{fb} when $f\sim\unit[3]{TeV}$ and
+we also can expect detectable event rate which were not the case for LHC Run 1 \mycite{Tonini:2014dza}. 
+
+% From all the cross section plots of the productions in the both plane $(f,\sigma)$ and $(\kappa,\sigma)$, 
+From \figs{xs:univ}{xs:kq4} it is clear that none of the processes is significantly high. 
+Depending on the values of the points in the parameter space, the cross section relies on very different parameter 
+and each process would have a diversity of final states.
+
+
+When the $\kappa$ is small so that $q_H$ and $\ell_H$ get lighter, 
+T-parity odd fermions are expected to be produced more. 
+Thanks to the colour factor, the production rate of $q_H$ is 2-3 orders of magnitude higher
+than that of $\ell_H$. Thus, $\ell_H$ becomes meaningful only when $f$, $\kappa$ are small 
+such as $f \lesssim \unit[1]{TeV}$ and $\kappa \lesssim 0.5$
+
+On the other hand, when $\kappa$ is large, 
+the production of heavy vector bosons becomes important 
+because their mass is independent of $\kappa$, which is different from that of T-odd fermions
+$q_H$ and $\ell_H$ whose mass gets heavier and less produced. 
+If $T^\pm$ is light, so it is experimentally accessible case, 
+they will be produced as much as $V_H$. 
+T-parity even vectorlike top $T^+$ is always negligible 
+because $T^+$ is heavier than T-odd vectorlike top $T^-$. 
+
+
+
+\subsection{Branching Ratio}
+ 
+%  This discussion is focused on more relevant processes.
+We considered only two-body decays and the processes with the branching ration more than $1\%$. 
+Mostly, we discuss about the \fu~model and the \lil~model because the \hq~model has very similar decay patterns with the \fu~model.
+So, the branching ratio plots about the \hq~model are shown with that of the \fu~model.
+$A_H$ only can decay when T-parity is violated 
+so, as far as we discuss T-parity conserved case, $A_H$ does not decay at all.
+
+\subsubsection*{Decays of T-parity odd fermions}
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedf_BR_for_8880001} \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedk_BR_for_8880001} \quad
+\caption{Branching Ratios of $d_H$ in the \emph{Fermion Universality/Light $\ell_H$} model. 
+Items in legend appear in decreasing order of the maximum value of the respective curve. 
+Left: Fixed $f = \unit[1]{TeV}$ (solid), $f = \unit[2]{TeV}$ (dashed). Right: Fixed $\kappa = 1$ (solid), $\kappa = 2$ (dashed).}
+\label{fig:cm:br1}
+\end{figure*}
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedf_BR_for_8880002} \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedk_BR_for_8880002} \quad
+\caption{Branching Ratios of $u_H$ in the \emph{Fermion Universality/Light $\ell_H$} model. 
+Parameters as in Fig.~\ref{fig:cm:br1}.}
+\label{fig:cm:br2}
+\end{figure*}
+
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedf_BR_for_8880011} \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedk_BR_for_8880011} \quad
+\caption{Branching Ratios of $e_H$ in the \emph{Fermion Universality} model}
+\label{fig:cm:br11}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedf_BR_for_8880012} \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedk_BR_for_8880012} \quad
+\caption{Branching Ratios of $\nu_{e,H}$ in the \emph{Fermion Universality} model}
+\label{fig:cm:br12}
+\end{figure*}
+% \paragraph{Decays of $q_H$}
+ For T-odd quark $q_H$ branching ratio, the \fu~model and the \lil~model have same aspects in the parameter space as we see in \figs{cm:br1}{cm:br2}
+and they are depending on both $f$ and $\kappa$ as so are their mass terms.
+Up- and down-type T-odd quarks decay dominantly into $(W_H,~q)$ with the branching ratio $60\%$ in the range that the decays are allowed kinematically.
+Second most decay is to $(Z_H,~q)$ with $30\%$ and the last is to $(A_H,~q)$ with $10\%$.
+In the right ones of \figs{cm:br1}{cm:br2}, small dependence on $f$ appears because of the factor $v/f$ of each coupling constant, which is various 
+depending on the kind of up- and down-type particles. Thus, the dependence that we can see from the curve is also different.
+
+Additionally, because the \fu~model assumes that $\kappa_q~=~\kappa_\ell$, 
+the particles related with $\kappa_q$ and $\kappa_\ell$ have the same quantum numbers by construction.
+This fact brings about that the decay patterns are identical when they are replaced by the components of $SU(2)$ doublets.
+For example, the branching ratio for $\nu_H \to V_H e$ is same with that for $u_H \to V_H d$.
+
+\subsubsection*{Decays of $V_H$} 
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedf_BR_for_8880023} \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedf_BR_for_8880024}
+\caption{Branching Ratios of $Z_H$ (left) and $W_H$ (right)  in the \emph{Fermion Universality} (\emph{Heavy $q_H$} is very similar, see text). 
+Parameters as in Fig.~\ref{fig:cm:br1}. In both plots, curves corresponding to decays with $\nu, \ell$ or $b$ are nearly identical.}
+\label{fig:cm:br2324}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/kl2_fixedf_BR_for_8880023} \quad
+\includegraphics[width=0.45\textwidth]{figures/xsbr/kl2_fixedf_BR_for_8880024}
+\caption{Branching Ratios of $Z_H$ (left) and $W_H$ (right)  in the \emph{Light $\ell_H$} model. $f$ is chosen as in Fig.~\ref{fig:cm:br1}, left.
+In both plots, the curves corresponding to decays with $\nu$ or $\ell$ are nearly identical.}
+\label{fig:cm:br2324kl}
+\end{figure*}
+The plot for the branching ratio of the \fu~model is \fig{cm:br2324} and that of the \lil~model is \fig{cm:br2324kl}. 
+We show the plots for only the branching ratio with repect to $\kappa$ but not to $f$ because there is no dependence on $f$.  
+About the \fu~model, the possible decays of $W_H$ are into $(W, A_H)$, $(q, q_H)$, $(\nu, \ell_H)$, $(\ell, \nu_H)$, $(b, t_H)$ and $(t, b_H)$.
+The kinematical condition changes centering around $\kappa \approx 0.5$,
+$(W, A_H)$ is the only decay channel in the region of $\kappa > 0.5$ 
+while the other states are possible and $W, A_H$ disappears in $\kappa < 0.5$.
+Similary, $Z_H$ decays to the same states with that of $W_H$ except for the fact that $h, A_H$ instead of $W, A_H$. 
+Again, $Z_H$ decays mainly into $h, A_H$ when it is allowed with $\kappa > 0.5$
+whereas this is highly suppressed and other decay channels appear in the region of $\kappa < 0.5 $.
+
+When it comes to the \lil~model, it is different story. 
+As $\ell_H$ are holded as light particles, the heavy gauge bosons $W_H$ and $Z_H$ decay into the state 
+that consist of $\ell,~\ell_H,~\nu$ and $\nu_H$. 
+That is, $W_H \to \nu, \ell_H$, $W_H\to \ell, \nu_H$ with 50\% each 
+and $Z_H \to \nu, \nu_H$, $Z_H \to \ell, \ell_H$ also with 50\% each. 
+In case of $\kappa_q < 0.5$, decay to $(q, q_H)$ is also allowed which is dominant. 
+
+Note that for the \hq~model, the branching ratios are similar with the \fu~model 
+except for the missing of $V_H \to q q_H$. 
+
+
+
+\subsubsection*{Decays of $T^\pm$}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/samekqkl_fixedk_BR_for_8880008} 
+\caption{Branching Ratios of $T^+$ in the \emph{Light $T^\pm$} scenario.}
+\label{fig:cm:br7}
+\end{figure}
+T-odd vectorlike top partner $T^-$ decays only into $A_H$, $t$ with the branching ratio $100\%$. 
+The plot \fig{cm:br7} is the branching ratios of $T^+$ in the \lil~model. 
+Since $T^+$ is T-parity even particle, it has to decay into a pair of T-odd particles or a pair of SM particles.
+There are 4 possibled decays: decay into $(b,W)$ is the prominent channel with the branching ratio $45\%$.
+The followings are $(t,Z)$ and $(t,h)$ with $20\%$ each. 
+Decaying into a pair of T-odd particles, decay to $(T^-,A_H)$, is also possible although its branching ratio is $\sim 10\%$.
+These branching ratios do not depend on $\kappa$ as well as they depend only a little on $f$. 
+
+\subsubsection*{Decays of $A_H$}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/xsbr/tpv_BR_for_8000022}
+\caption{Branching Ratios of $A_H$ in the \emph{TPV} benchmark.}
+\label{fig:cm:br22}
+\end{figure}
+
+The each decay width are followed the calculation of \mycite{Freitas:2008mq}. 
+The plot \fig{cm:br22}, its branching ratios are related only with $f$. 
+The tendency of the branching ratios are up to the kinematical condition that is about $M_{A_H},~M_W$ and $M_Z$.
+As a function of $f$, the mass of $A_H$ is greater than $2\times M_W$ and $2\times M_Z~(\sim \unit[180]{GeV})$ when $f \gtrsim 1200$.
+Thus, in the region of $f \gtrsim 1200$ $A_H$ decays mainly into a pair of SM gauge bosons. 
+
+When $f$ goes to the range where $M_{A_H} \lesssim \unit[180]{GeV}$, decays to the pair of SM gauge bosons get suppressed 
+but loop-induced leptonic decays play a role. 
+If $f$ is smaller than \unit[$900$]{GeV}, decays into the pair of SM fermions become major. 
+
+\subsection{Expected Final topoogies}

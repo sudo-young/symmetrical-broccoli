@@ -1,0 +1,33 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for PhD Thesis at Hamburg University
+%
+% \file appendix.tex
+%
+% Author: Markus Ebert
+%
+% Copyright: (c) Markus Ebert, 2017
+%    This work may be freely used, modified and redistributed.
+%    Good luck with your PhD!
+%
+% Description:
+%    Appendix.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Dimension-6 operators in \whizard}
+\label{app:notation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{How to implement new vertices into \whizard}
+
+Look up whether there is the vertex which consists of the same particles. 
+If there is, you can just use it.
+If not, you should define yourself. 
+
+Type the new coupling coefficients into SM.f90 file.
+
+\section{How to use the dimension-6 operators in \whizard}
+
+here is an example for using 6 dimensional operatros.
+
+Model: SM-6dim

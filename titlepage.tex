@@ -1,0 +1,86 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for PhD Thesis at Hamburg University
+%
+% \file titlepage.tex
+%
+% Author: Markus Ebert
+%
+% Copyright: (c) Markus Ebert, 2017
+%    This work may be freely used, modified and redistributed.
+%    Good luck with your PhD!
+%
+% Description:
+%    Definition of the titlepage.
+%    We use the standard \maketitle, with \title redefined to give
+%    the desired appearance.
+%    In this way, all margins etc are done correctly
+%
+%    Titlepage requires the metadata in thesis.tex to be set.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Note: Since the default \maketitle is not very configurable,
+% the whole structure is put into \title.
+%
+% Alternatively, one could create the titlepage separately
+% and include it with pdfpages.
+%
+% Other methods are not that great, as they suffer from bad typearea
+% for the cover page (e.g. margins, BCOR would need to be redefined)
+
+\title{%
+   % Use double line space on the title page
+   \doublespacing
+   % Avoid KOMA-fonts, use standard font
+   \normalfont
+   % Standard size:
+   \Large
+   %%%
+   \vspace{1cm}
+   \hrule height 1.5pt
+   \vspace{1ex}
+   {\huge\textbf \thetitle\\}
+   \vspace{1ex}\hrule height 1.5pt
+   %%%
+   \vspace{2cm}
+   {\LARGE \textbf{Dissertation}\\}
+   %%%
+   {%
+   zur Erlangung des Doktorgrades\\
+   an der Fakult\"at f\"ur Mathematik,\\
+   Informatik und Naturwissenschaften\\
+   Fachbereich Physik\\
+   der Universit\"{a}t Hamburg\\
+   }
+   %
+   %
+   {\Large
+   \vspace{2.5cm}
+   vorgelegt von\\
+   \vspace{0.2cm}
+   \textsc{\theauthor}\\
+   \vspace{0.2cm}
+   aus\\
+   \vspace{0.2cm}
+   \textsc{\thebirthplace}\\
+   }
+   %
+   \vspace{2cm}
+   %
+   {
+   \theplace\\
+   \theyear
+   }
+   %
+}
+
+% Turn off date
+\author{}
+\date{}
+
+% Redefine the margins for the coverpage
+\renewcommand*{\coverpagetopmargin}{0mm}
+% \renewcommand*{\coverpageleftmargin}{0mm}
+% \renewcommand*{\coverpagerightmargin}{0mm}
+\renewcommand*{\coverpagebottommargin}{0mm}
+
+\maketitle

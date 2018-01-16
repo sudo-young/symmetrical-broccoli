@@ -1,0 +1,83 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for PhD Thesis at Hamburg University
+%
+% \file layout.tex
+%
+% Author: Markus Ebert
+%
+% Copyright: (c) Markus Ebert, 2017
+%    This work may be freely used, modified and redistributed.
+%    Good luck with your PhD!
+%
+% Description:
+%    This file declares all formatting options.
+%    It is based on KOMA script, see http://www.ctan.org/pkg/koma-script.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\KOMAoptions{
+  headinclude,                  % headlines are taken into account for text area
+  headlines=0.8,
+  titlepage=firstiscover,       % First page is a coverpage
+  open=right,                   % New chapters always open on right (even) page
+  cleardoublepage=plain,        % Empty pages (before new chapter) are empty
+  chapterprefix=true,           % True: New chapters start with ``Chapter $n''
+  captions=tablesignature       % Captions of table are printed on bottom
+}
+
+% Linespace: userdefined stretch that will be disabled in bibliography
+\newcommand{\mystretch}{1.1}
+\usepackage{setspace}
+\setstretch{\mystretch}
+% \usepackage[onehalfspacing]{setspace}
+
+% Need to recalc layout
+\recalctypearea
+
+% %%%%
+% Define the page header
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\KOMAoption{headsepline}{true}               % Header is separated by a line
+\addtokomafont{sectioning}{\rmfamily}        % Correct serifes for captions
+\setkomafont{pagehead}{\normalfont\bfseries} % Header is in boldface
+\setkomafont{pagefoot}{\normalfont}          % and footer is normal font
+\addtokomafont{pagenumber}{\bfseries}        % Pagenumber in header is boldface
+\ofoot[\thepage]{}                           % Use \thepage, not \pagemark, to have normal font
+\ohead[]{\pagemark}                          % Page number on outside border
+\ihead[]{\headmark}                          % Chapter/section name inside
+\automark[chapter]{chapter}                  % Left header shows chapter name
+\automark*[section]{}                        % Right header shows section name
+\renewcommand*{\chaptermarkformat}{          % Adjust header such that ``Chapter $n. Title$ has the dot
+  \chapapp~\thechapter.\enskip}
+% Less space before Chapter $n.
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-\topskip}}
+
+\renewcaptionname{english}{\figurename}{Fig.}
+% Remove indentation in labels
+\setcapindent{0pt}
+\flushbottom
+
+% %%%%%
+% % Allow equations to always break from even to add pages
+% \makeatletter
+% \everymath{%
+%   \ifodd\value{page}%\allowdisplaybreaks[0]%
+%     \else \allowdisplaybreaks[4]%
+%   \fi
+% }
+% \makeatother
+
+%%%%%
+% Squeeze bib entries together
+\let\oldthebibliography\thebibliography
+\let\endoldthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]{
+  \begin{oldthebibliography}{#1}
+  \setstretch{1.05}
+  \setlength{\parskip}{2pt}
+  \setlength{\itemsep}{2pt plus 0.3ex}
+}
+{
+  \setstretch{\mystretch}
+  \end{oldthebibliography}
+}

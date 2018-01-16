@@ -1,0 +1,81 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Result in comparison with 13TeV data at the LHC}
+\label{chap:LHCresultLHM}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% % 
+
+\section{Final state topologies}
+% \subsection{production cross sections}
+To have comprehensive view of the result plots, 
+I need to discuss about topological aspects of LHT particle productions and decays.
+
+\subsection{the production cross sections}
+%\note{how the cross section get change w.r.t. the scenarios}\\
+\more{Crosssectionplot} is production cross section plot with repect to $f$ and $\kappa$
+where $\kappa~=~\kappa_q~=~\kappa_\ell$ in Fermion Universal model and $\sqrt{s}=\unit[13]{TeV}$. 
+Since colour neutral fermions $\ell_H$ do not play a crucial role on the production processes,
+the production cross section plot of Fermion Universal model and that of Light $\ell_H$ model 
+are just alike.
+
+
+As I mentioned before, all the cross sections of processes decrease as f increases. 
+Only $q_H$ and $\ell_H$ are affected by $\kappa$ because only their masses depend on $\kappa$. 
+$T^\pm$ have dependence on $R$ as well as $f$, 
+but the cross section of the processes related with $T^\pm$ is flat in the $(\kappa, \sigma)$ plot.
+
+% % VH 
+
+Even though mass terms of $V_H$ depend only on $f$, we can find a small $\kappa$-dependence 
+in the \more{$\kappa,\sigma$ plot} of Fermion Universal model. 
+\more{It is because of contributions of $q_H$ in t-channel production of $V_H$ pairs,
+which interfere destructively Drell-Yan-like s-channel vector boson diagrams. }
+% % 
+This effect is observed where $\kappa~\approx~0.5$ regardless to $f$,
+which results in the fact that the production cross section of $V_H$ pair is less than 5 times
+when $\kappa \approx 0.5$ in comparison to when $\kappa > 4$ and $q_H$ is decoupled. 
+Also, in Heavy $q_H$ model, this effect disappears since $q_H$ are decoupled by construction. 
+
+
+The production cross section values are roughly $10^3$ fb at most  
+and we expect that the LHC can probe the parameter space sensitively 
+in $\sqrt{s} = \unit[13]{TeV}$. 
+Furthermore, the cross section is order \unit[$10^{-1}$]{fb} when $f\sim\unit[3]{TeV}$ and
+we also can expect detectable event rate which were not the case for LHC Run 1 \more{ref.tonini thesis}. 
+
+
+From all the cross section plots of the productions in the both plane $(f,\sigma)$ and $(\kappa,\sigma)$, 
+it is clear that none of the processes is significantly high. 
+Depending on the values of the points in the parameter space, 
+the cross section relies on very different parameter 
+and each process would have a diversity of final states.
+
+
+When the $\kappa$ is small so that $q_H$ and $\ell_H$ get lighter, 
+T-parity odd fermions are expected to be produced more. 
+Thanks to the colour factor, the production rate of $q_H$ is 2-3 orders of magnitude higher
+than that of $\ell_H$. Thus, $\ell_H$ becomes meaningful only when $f$, $\kappa$ are small 
+such as $f \lesssim \unit[1]{TeV}$ and $\kappa \lesssim 0.5$
+
+On the other hand, when $\kappa$ is large, 
+the production of heavy vector bosons becomes important 
+because their mass is independent of $\kappa$, which is different from that of T-odd fermions
+$q_H$ and $\ell_H$ whose mass gets heavier and less produced. 
+If $T^\pm$ is light, so it is experimentally accessible case, 
+they will be produced as much as $V_H$. 
+T-parity even vectorlike top $T^+$ is always negligible 
+because $T^+$ is heavier than T-odd vectorlike top $T^-$. 
+
+
+
+\subsection{branching ratios}
+
+
+
+
+\section{Collider Results}
+
+
+% % 
+
+

@@ -1,0 +1,374 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Result in comparison with 13TeV data at the LHC}
+\label{chap:LHCresultLHM}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % 
+% 
+
+\section{Collider Results}
+% 
+% \subsubsection*{General Remarks}
+Based on aforementioned discussion, let us grasp the plots of the results from CheckMATE. 
+Plots figs.\ref{fig:cmresults:univtpcnotop}-\ref{fig:cmresults:lighttpvtop} are the results for all the scenarios.
+
+Plots have information about the exclusion limits and were drawn by two principles. 
+One is to show in which center of mass energy $\sqrt{s}$ the parameter space is excluded between $\unit[8]{TeV}$ and $\unit[13]{TeV}$, which are in the left-hand side row.
+The other one is to tell which analyses make the points excluded. 
+
+For the left-hand side ones, the region excluded by $\unit[8]{TeV}$ looks validated by comparison with the result \mycite{Tonini:2014dza}. 
+$\unit[13]{TeV}$ extends the excludsion limits thanks to the higher center of mass energy and intergrated luminocities.
+Also, these plots contains the mass contours of the particle, which help to find out the excluded points are by which process related which partilcles. 
+
+For the right ones, as just mentioned, plots contain the information about the analyses of the LHC,
+which tells that the point is excluded by which analyses. 
+Some plots are excluded by one analysis and others are by several ones. 
+Furthermore, some points are excluded by several anaylses, in this case the analyses are selected for plotting in the way to choose less number of analyses.
+
+
+
+\subsection{\fu~model}
+For \fu~model, our discussion proceeds on the base that the Yukawa coupling constants for T-parity odd fermions $\kappa_q$ and $\kappa_\ell$ are equal.
+That is, the mass spectrum of T-odd fermions are gathered in the same value.
+
+
+\subsubsection{T-parity conserved and heavy $T^\pm$ case}
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpc_813_total_groupallbuttevenodd_andvh} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpc_13teV_multian_total_groupallbuttevenodd}
+\caption{Results for scenario (\emph{Fermion Universality})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPC})}
+\label{fig:cmresults:univtpcnotop}
+\end{figure*}
+
+The plot \fig{cmresults:univtpcnotop} is about the result with $R~=~0.2$ which makes $T^\pm$ too heavy to detect from experiments
+when T-parity is conserved(\emph{TPC}). 
+
+We can think of the results by the region seperately. 
+\paragraph{For $f \gtrsim \unit[1]{TeV} $,} the shape of exclusion limits is parallel to the mass contour of $q_H$. 
+The mainly most sensitive analysis for this result is the search for more than 2 jets plus the misisng transverse momentum. 
+The decay topology that is the most relevant one is the decay chain of $q_H$.  % into $q~V_H$ follwed by $A_H+X$. 
+ Two T-odd quarks $q_H q_H$ decay into $qqA_HA_H~+~X$ is the relevant topology for this analysis. 
+And the $A_H$ does not decay and becomes parts of the missing transverse momentum since the T-parity is conserved and $A_H$ is stable.
+Thus, the bounds follow the mass contour of $q_H$ which is roughly $f\times \kappa$ where $\kappa=\kappa_q=\kappa_\ell$.
+The excluded area is $f\times \kappa < f\times \kappa_{max}$ that $f\times \kappa_{max} \approx \unit[1.5]{TeV}$  when $\sqrt{s}=\unit[8]{TeV}$ 
+and $f\times \kappa_{max} \approx \unit[2]{TeV}$  when $\sqrt{s}=\unit[12]{TeV}$. 
+% And in this plot, the maximum bound is $f\times \kappa_max$
+%because of the $q_H$ particle contributed to this decay.
+However, the limit drops a bit stiffer than the $q_H$ mass contour.
+This is the effects from the heavy vector bosons production. 
+As we discussed in \sec{LHTcrosssection}, there is $q_H$ t-channel productions of $V_H$ and 
+this plays a role on this exclusion limit. 
+
+
+\paragraph{In case of $f \lesssim \unit[1]{TeV}$,} most of area is excluded and there is rarely dependence on $\kappa$ nor $f$
+especially in the region $f \lesssim \unit[800]{GeV}$.
+This is because T-odd quark is not produced many enough 
+ when $\kappa$ is large compared with $f$ in the given energy level ($\sqrt{s}~=~\unit[8]{TeV}$ or $\unit[13]{TeV}$) due to kinematical limits. 
+However, the bound depends slightly on $\kappa$ in the region of $f$ between $(800,900)$GeV. 
+The reason of this is, as it is mentioned in \sec{LHTcrosssection}, T-odd quarks intefere deconstructively the productions of the heavy vector bosons via t-channel. 
+Compared with the region with $f \gtrsim \unit[1]{TeV}$, the main contributing process to the exclusion change,
+but the most sensitive analysis does not change, which is the search for the multijets plut the missing transverse momentum. 
+The final state topologies come from the hadronic decays of $W$ and $h$ which are from $W_H \to W~A_H$ and $Z_H \to h~A_H$.
+
+\subsubsection{T-parity conserved and light $T^\pm$ case}
+\begin{figure*}[h]
+\centering
+ \includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpc_813_total} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpc_13teV_multian_coverage}
+\caption{Results for scenario (\emph{Fermion Universality})$\times$(\emph{Light $T^\pm$})$\times$(\emph{TPC})}
+\label{fig:cmresults:univtpctop}
+\end{figure*}
+
+To see the sensitivity of the cancellon of top partner $T^\pm$, we choose $R=1.0$ and show the result of it in \fig{cmresults:univtpctop}.
+Different from the previous benchmark case, $T^\pm$ is accessible from the experiments 
+and the mass of $T^\pm$ is affected only by $f$ since $R$ value is fixed.
+As a result, in the large $f$ region, the production of $T^\pm$ get decreased, thus, 
+the bound becomes just the same with the result of the previous heavy $T^\pm$ case that we cannot see the effects from the $T^\pm$ production. 
+If $T^\pm$ can be produced kinematically as in $f \lesssim 1$TeV, they have notable effects on the bound. 
+Not only the $\kappa$-dependece has disappeared in the region of $f \subset (800,900)$GeV, 
+but also the vertical exclusion limit is extended up to $f ~\sim~\unit[1.3]{TeV}$. 
+In other words, the bound with $\kappa$-dependence is fully dubbed with $T^\pm$ effects.
+The most sensitive analysis for this is also the search for multijets with $\ETmiss$. 
+
+% \note{Probbably, the reason why the multijets with $\ETmiss$ is generally most sensitive is 
+% because \Checkmate has implemented this analysis with $unit[36.6]{fb^{-1}}$ luminosity 
+% not like others with $unit[13.3]{fb^{-1}}$. }
+
+\subsubsection{T-parity violated case}
+\begin{figure*}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpv_813_total_groupallbuttevenodd} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpv_13teV_multian_total_groupallbuttevenodd}
+\caption{Results for scenario (\emph{Fermion Universality})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPV})}
+\label{fig:cmresults:univtpvnotop}
+\end{figure*}
+
+
+Plots \figs{cmresults:univtpvnotop}{cmresults:univtpvtop} are showing the results of the cases that is the \fu~model with violated T-parity(\emph{TPV}) 
+without top partners $T^\pm$ effects(\emph{Heavy $T^\pm$}) and with their effects(\emph{Light $T^\pm$}).  
+Again, the plots from the results seems to be seperated to two area: $f \gtrsim \unit[1]{TeV}$ and $f \lesssim \unit[1]{TeV}$.
+
+\paragraph{When $f \gtrsim \unit[1]{TeV}$,} the bound has dependece on $\kappa$ and runs with the contour of $q_H$ mass.
+The area of $M_{u_H} \lesssim \unit[2.5]{TeV}$ for $f \approx \unit[1]{TeV}$ and 
+$M_{u_H} \lesssim \unit[1.5]{TeV}$ for $f \approx \unit[3]{TeV}$ are excluded.
+As T-parity is violated, more final state topologies appear and thus more analyses are contributed to the result.
+Especially, the two analyses, \texttt{`atlas\_conf\_2016\_054'} and \texttt{`atals\_conf\_2017\_022'} are almost equally sensitive to the exclusion area.
+The former one is the search for 1 lepton, multijets and $\ETmiss$ and the latter one is for no lepton, multijets and $\ETmiss$.
+The fact that they are sensitive to the result is understandable if we take into account the final state of SM gauge boson decays. 
+From the decays of SM gauge bosons, the final states that did not exist from the previous benchmark scenarios appear,
+which are produced via leptonic and hadronic decay of $W$ and $Z$ bosons. 
+By each signal region of the two searches, the similar number of events are observed. 
+% \more{Overall, gain the similar event rate in the respective signal regions of these two studies. ? }
+% % % %  final state -  lepton, why 2016-054 is more sensitive
+In general, $A_H$ decays to $WW$ more than to $ZZ$, in addition when $f$ is smaller, it becomes more ovbious. 
+Since the decay of $W$ produces more charged leptons than that of $Z$, we can make a guess that there are more leptonic final state in the region with smaller $f$. 
+And this makes the analysis with lepton in the final states more sensitive and 
+we observe it from the plot \fig{cmresults:univtpvnotop} in $f \subset (1,1.5)$TeV. 
+
+Another interesting thing is that the exclusion area does not change dramatically, which is because of the role of neutrinos in the final states. 
+From the processes that we are observing, basically a pair of heavy photons $A_H$ is produced from $q_H q_H$ or $V_H V_H$ and
+this decays into $WW$ or $ZZ$ with broken T-parity. 
+As $W$ and $Z$ decay, the missing transverse momentum originated from neutrinos is observed. 
+Assuming that gauge bosons decay into $\nu+X$ just averagely $25\%$ since we have 4 of gauge bosons from a pair of heavy photons, 
+so, the missing transverse momentum appears with at least $70\%$ of $\ETmiss$ of \emph{TPC} case.
+% Although the amount of $\ETmiss$ gets decreased, the bound does not change significantly thanks  %even though the T-parity is violated.
+The final states are the same visible state with the previous case and additional boosted particles, which may help the event pass the cut better. 
+This is why the bound does not change significantly compared with the previous case.
+
+
+\paragraph{Next, for $f \lesssim \unit[1]{TeV}$,} let us discuss rather $\kappa$ independent limit.  
+Compared with the \fu~model with conserved T-parity, the vertical limit is extended. 
+The parameter space is excluded when $f \lesssim \unit[1]{TeV}$ with $\kappa \lesssim \unit[1.5]{TeV}$ 
+and $f \lesssim \unit[1.1]{TeV}$ with $\kappa \lesssim \unit[4.0]{TeV}$. 
+To figure out the reason of the exclusion, we again scrutinize the analyses of the LHC from the right one of the plot \fig{cmresults:univtpvnotop}. 
+The multijets search that used to have a crucial impact on the bound for the previous cases is not the most important one any more.
+For this result, preferably the electroweakino search plays more important role. Specifically, the signal region \texttt{SR-slep-e} generates the exclusion bound.
+This analysis looks for three high-$p_T$ cahrged lepton not coming from a pair of $W$ or $Z$ and a large amount of $\ETmiss$
+It was not possible to pass this cut for the case with conseved T-parity because the decay chain without $A_H$ decays, for example,
+$q_H q_H \to qq W_H W_H \to qqWWA_H A_H$ have only two leptons. As decaying $A_H$ with violated T-parity, third charged lepton can appears. 
+Furthermore, there is no constraints about jet multiplicity for the final states, which may bring about a large number of events expected via this analysis. 
+
+
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpv_813_total} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpv_13teV_multian_coverage}
+\caption{Results for scenario (\emph{Fermion Universality})$\times$(\emph{Light $T^\pm$})$\times$(\emph{TPV})}
+\label{fig:cmresults:univtpvtop}
+\end{figure*}
+\paragraph{The top partner $T^\pm$ is light} and accessible by experiments, which extend the exclusion limit by $\unit[100]{GeV}$, as we can see from the plot \fig{cmresults:univtpvtop}. 
+So the result differece generated by light $T^\pm$ is not so much, which is different from the case of \emph{TPC}. 
+And still, the electroweakino search is the most important analysis. 
+For $T^\pm$ search, the final topologies produced from $p p \to T^- \bar{T^-} \to (bW)(bW) WW VV$ have crucial roles. 
+The more events come from it, the more exclusion area is extended.
+Of coures, since $T^\pm$ depends on $R$ and $f$, the limits generated by $T^\pm$ very much depends on the value of $R$. 
+We just set one case with $R=1$ to see how the results would be. 
+
+
+\paragraph{The multijet analysis,} \texttt{`atals\_conf\_2017\_022'}, does not have so much impact on the results not like the \emph{TPC} case.
+This analysis covers various hierarchy and topologies of Supersymmetric particles $\tilde{g},~\tilde{q}$.
+And it is targetting of r
+
+\more{Supersymmetric Standard model search related $q_H$  behaviour}\\
+\more{$T^+ \to t A_H$ topology}\\
+
+
+
+\subsection{\hq~model}
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpc_813_total_groupallbuttevenodd_andvh} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpc_13teV_multian_total_groupallbuttevenodd}
+\caption{Results for scenario (\emph{Heavy $q_H$})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPC})}
+\label{fig:cmresults:heavytpcnotop}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpc_813_total} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpc_13teV_multian_coverage}
+\caption{Results for scenario (\emph{Heavy $q_H$})$\times$(\emph{Light $T^\pm$})$\times$(\emph{TPC})}
+\label{fig:cmresults:heavytpctop}
+\end{figure*}
+
+\begin{figure*}
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpv_813_total_groupallbuttevenodd} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpv_13teV_multian_total_groupallbuttevenodd}
+\caption{Results for scenario (\emph{Heavy $q_H$})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPV})}
+\label{fig:cmresults:heavytpvnotop}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpv_813_total} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpv_13teV_multian_coverage}
+\caption{Results for scenario (\emph{Heavy $q_H$})$\times$(\emph{Light $T^\pm$})$\times$(\emph{TPV})}
+\label{fig:cmresults:heavytpvtop}
+\end{figure*}
+
+We discuss of the results with the \hq~model that $\kappa_q$ is fixed value as $4.0$. 
+The result plots are figs.\ref{fig:cmresults:heavytpcnotop}-\ref{fig:cmresults:heavytpvtop}. 
+Fixed large value of $\kappa_q$ causes that $q_H$ is decoupled in the energy scale of experiments 
+and the production channels in association with $q_H$ get irrelevant to the exclusion limits.
+For this reason, there are $\ell_H$ mass contours on the plots instead of that of $q_H$. 
+
+Since $q_H$ become decoupled with the condition of the \hq~model, the topology that mainly contributes to the results is $\ell_H$ decay into $\ell~V_H$ instead of $q_H~\to~q~V_H$. 
+That is, the final dominant topologies change to multilepton state from multijets states. 
+In the hadron collider LHC, the production event rate of $\ell_H \ell_H$ is less by 2 to 3 orders of magnitude than that of $q_H q_H$,
+it is expected that the region where $q_H q_H$ has crucial on would get weaker, for example, in large $f$ 
+and small $\kappa$.
+
+Besides, while the $V_H V_H$ production is affected by the $\kappa_q$ from t-channel $q_H$, 
+$\kappa_\ell$ does not have any effect on it. Thus, the exclusion area formed by the contrubution of $V_H V_H$ production channel is predicted to have the result 
+with $\kappa~=~4.0$ of the \fu~model. 
+
+As we saw in the previous benchmark, the results are diveded in two area. 
+\paragraph{For $f$ is similar with $\unit[1]{TeV}$,} the most sensitive processes are ones related with heavy vector bosons $V_H$ production or cancellon of top partners $T^\pm$ productions.
+Both are irrelevant to $\kappa_\ell$, thus the exclusion limit becoms vertical line. There are more or less around $\unit[1]{TeV}$ area. 
+ \begin{table}[h]
+\begin{center}
+  \begin{tabular}{ l | c | c }
+    \hline
+     & $T^\pm$ is heavy &  $T^\pm$ is light \\ \hline
+    T-parity is conserved(\emph{TPC}) & $f~\gtrsim~\unit[950]{GeV}$ & $f~\gtrsim~\unit[1350]{GeV}$ \\ \hline
+    T-parity is broken(\emph{TPV}) & $f~\gtrsim~\unit[1100]{GeV}$ & $f~\gtrsim~\unit[1200]{GeV}$ \\
+    \hline
+  \end{tabular}
+\end{center}
+ \end{table}
+
+This table shows the allowed area with respect to the cases and they are in agreement with the results with $\kappa~=~4.0$ of the \fu~model
+, which tells us that the effect of $\kappa_\ell$ is tiny. 
+Also, the most influential topologies are still multijets final states for the T-parity conserved case. 
+On the other hand, multilepton final states get to have more effects on the results for the T-parity violated case.
+
+
+\paragraph{For $\kappa_\ell$ is less than $0.5$,} the important feature is that the mass hierarchy between heavy vector $V_H$ and T-odd lepton $\ell_H$ are changed.
+Boosted leptonic states are produce by this decay, which is fitted to the multilepton analysis and this excluded $f$ upto $\unit[1.9]{TeV}$.
+Of course, these decays depend on $\kappa_\ell$ and we can check it from the bound.
+
+\paragraph{The bound of $f\times \kappa_{max}$} has vanished as $q_H$ dissolved in the detectable energy scale by $\kappa_q=4.0$.
+In case of \emph{TPC}, this is also because of the fact that $\ell_H \ell_H$ has too less production event rate to give any exclusion limit from this even for $\sqrt{s}~=~\unit[13]{TeV}$.
+But in \emph{TPV} case, there is the exclusion bound along with the mass contour of $\ell_H$. It is thanks to the increase of leptonic decays from gauge bosons. 
+\bigskip
+
+From the \hq~model, we could find out that $q_H$ has crucial impacts on the exclusion limits in the region $\kappa \lesssim 1.5$ at the LHC.
+But the exclusion limits contributed by heavy gauge bosons which is almost vertical is strong regardless of the choice of $\kappa$ for T-odd fermion sectors.
+ 
+ 
+
+\subsection{\lil~model}
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpc_813_total_groupallbuttevenodd_andvh} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpc_13teV_multian_total_groupallbuttevenodd}
+\caption{Results for scenario (\emph{Light $\ell_H$})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPC})}
+\label{fig:cmresults:lighttpcnotop}
+\end{figure*}
+
+\begin{figure*}
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpc_813_total} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpc_13teV_multian_coverage}
+\caption{Results for scenario (\emph{Light $\ell_H$})$\times$(\emph{Light $T^\pm$})$\times$(\emph{TPC})}
+\label{fig:cmresults:lighttpctop}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpv_813_total_groupallbuttevenodd} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpv_13teV_multian_total_groupallbuttevenodd}
+\caption{Results for scenario (\emph{Light $\ell_H$})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPV})}
+\label{fig:cmresults:lighttpvnotop}
+\end{figure*}
+
+\begin{figure*}
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpv_813_total} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpv_13teV_multian_coverage}
+\caption{Results for scenario (\emph{Light $\ell_H$})$\times$(\emph{Light $T^\pm$})$\times$(\emph{TPV})}
+\label{fig:cmresults:lighttpvtop}
+\end{figure*}
+For the \lil~model, we fix $\kappa_\ell$ as $0.2$ so that T-parity odd leptons become even lighter and the mass gap between T-odd quarks and leptons gets broadened. 
+
+
+\more{in \fu~model, while mainly $Z_H \to h Z_H$ and $W_H \to W A_H$, \\
+instead, in \lil~model, $Z_H \to \ell \ell_H$ and $WH \to \ell_H \nu$($\nu_H \ell$) 
+this leptonic decay follwed by $\ell_H \to \ell A_H$ or $\nu_H \to \nu A_H$}
+
+\paragraph{two area}
+\more{As previous benchmarks, main exclude region $f \lesssim \unit[1.6]{TeV}$ 
+and $\kappa_q \lesssim 1.2$ }
+
+
+\paragraph{For smaller $\kappa_q$ }
+\more{and larger $f$, the bound looks similar with that of the \fu~model }
+
+\more{CheckMATE said it is sensitive to the search for multileptons \emph{analysis-name-here}}
+
+\more{from $\kappa_q <0.5$, $V_H$s have dominantly hadronic decays} and generate multijet final state.
+This repeat the similar exclusion limit for smaller $\kappa_q$ value with the \fu~model.
+
+\more{Since $q_H$ related final states are irrelevant to $T^\pm$ sector, the results does not change 
+depending on the presence of $T^\pm$ }
+
+\more{Furthermore,  in case of \emph{TPV}, the limits get slightly weakened because }
+the fact that $A_H$ decays results in the less $\ETmiss$ cut efficiency (????)
+
+\paragraph{For larger value of $\kappa_q$,} again, the exclusion limit forms almost vertical area.
+The bound is almost vertical because the heavy gauge bosons $V_H$ that have impacts on each point of this exclusion area
+are given effects from $f$ not from $\kappa_q$.
+However, as mentioned earlier, the production of heavy gauge bosons earns a little bit of contributions 
+from $t$-channel $q_H$, which causes a little bit of dependence on $\kappa_q$.
+
+By comparison to the result of the \fu~model, we observe that the exclusion area is extended considerably,
+which is excluded at $f \lesssim \unit[1.6]{TeV}$ for $\kappa_q \lesssim 1.5$ and $f \lesssim \unit[2]{TeV}$ for $\kappa_q < 5.0$.
+The reason why the bound is enlarged pretty much is thanks to the clean signal of boosted leptons.
+As the analyses coverage map on the plots says, this is excluded by the multilepton analysis that
+detect the boosted leptons stemming from the heavy gauge bosons not from SM gauge bosons $W$ and $Z$,
+so the signal of the process is clean and distinguishing with less SM background. 
+
+
+\paragraph{The heavy top partner $T^\pm$} does not generate any noticeable because the bound by the processes related with $V_H$ is too strong.
+The production of $T^\pm$ affects only for $f\lesssim\unit[1.35]{TeV}$ which is already covered by $V_H$ processes.
+Also, the final states of $T^\pm$ decay does not overlap with that of $V_H$, hence there is no enhancement as well.
+
+\paragraph{For T-parity violated case,} there is no extension from the result when $A_H$ does not decay,
+even the bound gets a bit weaker and this is because decaying of $A_H$ give rise to decrease of $\ETmiss$ cut efficiency.
+\more{dlrj antmsakfdlswl wkf ahfmrpTdma.}
+
+
+\paragraph{Overall,} from the \lil~model setting, the dominant signal of the heavy gauge boson $V_H$ decay has changed 
+and this extends the exclusion area notably. 
+The purpose of setting $\kappa_\ell$ as certain value and scanning $(f,\kappa_q)$ on the parameter space is 
+to see how the result change depending on the parameter $\kappa_\ell$ as well as $(f, \kappa_q)$.
+So, let us discuss the tendency of the result in the \lil model compared with that of the \fu~model.
+
+With $\kappa_\ell$, the heavy gauge boson $V_H$ decays into $\ell_H \ell$ with 100\% and of course,
+its decay width depends on the mass of $\ell_H$. The heavier the $\ell_H$ mass is, the less $V_H$ decay into it 
+and as getting heavier $\ell_H$, the result plots of the \lil~model will recover to that of the \fu~model.
+
+\more{$V_H\to \ell \ell' A_H$ decay kinetic configuration.}
+
+different mass will cause different energy distribution? 
+Since the mass gap between $M_{V_H}$ and $M_{A_H}$ is around $\unit[750]{GeV}$ at $f \sim \unit[1.5]{TeV}$,
+the final state lepton will be so energetic that the signal pass the constraints?
+
+
+\subsection{14TeV projections}
+\begin{figure*}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpc_1314_total_groupallbuttevenodd_andvh} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kqkl_tpc_14teV_multian_total_groupallbuttevenodd}
+\caption{Expected results at $\sqrt{s}=\unit[14]{TeV}, \int \mathcal{L} = \unit[3000]{fb}^{-1}$ for scenario (\emph{Fermion Universality})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPC}). }
+\label{fig:cmresults:14tev:samekqkl}
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpc_1314_total_groupallbuttevenodd_andvh} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kq4_tpc_14teV_multian_total_groupallbuttevenodd}
+\caption{Expected results at $\sqrt{s}=\unit[14]{TeV}, \int \mathcal{L} = \unit[3000]{fb}^{-1}$ for scenario (\emph{Heavy $q_H$})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPC}).}
+\label{fig:cmresults:14tev:kq4}
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpc_1314_total_groupallbuttevenodd_andvh} 
+\includegraphics[width=0.45\textwidth]{figures/limits/kl2_tpc_14teV_multian_total_groupallbuttevenodd}
+\caption{Expected results at $\sqrt{s}=\unit[14]{TeV}, \int \mathcal{L} = \unit[3000]{fb}^{-1}$ for scenario (\emph{Light $\ell_H$})$\times$(\emph{Heavy $T^\pm$})$\times$(\emph{TPC}).}
+\label{fig:cmresults:14tev:kl2}
+\end{figure*}

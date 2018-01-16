@@ -1,0 +1,37 @@
+\chapter{Effective Field Theory}
+% \section{}
+\label{sec:eft}
+% EFT, Howard Georgi; 
+
+% Why do we need exactly "Effective Field Theory"? What's special feature of EFT? 
+% Little Higgs / EFT both are handeling the hierarchy problem. -> light Higgs
+%  the Glashow-Weinberg condition. (GIM mechanism이 계속 작동하도록 하는.. ), 
+% 차지가 2/3인 쿼크랑 커플링하는 더블렛이랑, -1/3인 쿼크랑 커플하느 더블렛이랑 구분이 된다면 김 메카니즘이 작동 가능
+
+
+
+\note{REASON for the EFT}
+
+Because of renormalization conditions, 
+the dimension of the Lagrangian of the Standard Model has 4 space-time dimension.
+
+However, as considering the Standard Model as the low energy effective theory, 
+we can build up higher-dimensional operators such as 5- and 6-dimensional operators.
+
+
+\note{In some approach to the Effective field theory formalism}, 
+The Standard model is regarded as an effective field theory in the low energy level. 
+That is 
+
+
+\paragraph{5-dimensional operators}
+
+Only one exists. Weinberg operator. Majorana term?
+
+
+
+\paragraph{6-dimensional operators}
+
+There are several expression for this operators. 
+But I used GIMR basis form the paper \note{paper reference}.
+

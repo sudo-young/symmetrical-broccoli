@@ -1,0 +1,134 @@
+\chapter{Beyond the Standard Model}
+% \section{}
+\label{sec:bsm}
+
+
+\section{the Standard Model}
+
+Do I need this part? 
+Can I skip it?
+
+
+\section{the Electroweak Precision Test}
+% 
+% One of the most successful achievement of the SM is the prediction and the measurement of SM gauge bosons. 
+ 
+%  Although there is variation according to the renormalisation scheme, 
+% Z boson mass is measured and very consistent with the value from theory. 
+ 
+% In \mycite{Agashe:2014kda} \more{this is PDG}, Z boson mass is \unit[91]{GeV}, W boson mass is \unit[89]{GeV}?\\
+% The weakmixing angle, the weak interaction coupling constant $g$ is $0.3$?.
+And other values are shown in the \more{table:EWPT}. \\
+%  \mycite{Burgess:1993vc} model independent ewpt constraints on NP, oblique parameters related new physics\\
+ \mycite{Peskin:2017emn} Peskin TASI lecture for Electroweak Precision observables.
+ 
+The SM has been tested from several ineterations: polarization in $\beta$-decay, Muon decay, Pion decay, 
+ Neutrion deep inelastic scattering, and etc.
+
+ 
+\paragraph{S,T, and U parametrisation}
+\mycite{Peskin:1991sw} original peskin's oblique parameter \\
+
+\mycite{Barbieri:2004qk}seven are the remaining coefficients which enclose possible
+electroweak corrections, and are expressed in terms of the following oblique parameters\\
+
+
+ 
+ \paragraph{Precision test}
+ As a known electroweak theory, the Standard Model has predicted many observables precisely 
+and proved its validity by experiments. To fullfill this purpose the important quantity is 2-point function 
+which is applied to describe the SM observables as well as to relate them to the quantity 
+from the extension of the SM.
+% at the LHC : polarization in $\beta$-decay \cite{Koks:1976zec}, Muon decay\cite{Bardon:1965sd}, 
+% Pion decay, Neutrion deep inelastic scattering\cite{deGroot:1978feq}, and etc.
+% Also, the experiments of $Z$ boson resonance via $e^-e^+$ annihilation has been performed with high accuracy not only to validate the SM 
+% but also to suggest guide lines to beyond the SM sector. 
+% To fullfill this purpose the important quantity is 2-point function 
+% which is applied to describe the SM observables as well as to relate them to the quantity 
+% from the extension of the SM.
+
+The general expression of the Lagrangian related with the \emph{oblique} radiative corrections 
+invariant under $U(1)_{em}$ symmetry is 
+\begin{align}
+ \cL_{V^2} = -\frac{1}{2}W_3^\mu \Pi_{33}(p^2) - W_3^\mu \Pi_{3B}(p^2) B_\mu 
+ -\frac{1}{2} B^\mu \Pi_{BB}(p^2)B_\mu - W_+^{\mu}\Pi_{+-}(p^2)W_{-\mu}~, 
+\end{align}
+where $\Pi(p^2)$ is the vacuum polarization amplitudes at the tree level. 
+Since this Lagrangian is formed based on the effective formalism, new effects from new physics
+can be projected into it by parameterising the additional contributions.
+
+ Assuming $q^2$ is small, the amplitude of the vacuum polarizations can be expanded as
+ \begin{align}
+  \Pi(p^2) ~=~\Pi(0)+p^2 \Pi'(0) + \frac{p^4}{2} \Pi''(0) + \cO(p^6). 
+ \end{align}
+
+ 12 of observables are parametetrised from this Lagrangian. 
+ Some of them are used for renormalisation of SM observables 
+ and others are relevant to the BSM quantities.  
+ These three fix the gauge kinetic terms $g,~g'$ and the mass of $W$ boson:
+\begin{align}
+ \Pi_{+-}'(0)~=~\Pi_{BB}'(0)~=~1, \nonumber\\
+ \Pi_{+-}(0)~=~ -m_W^2 .
+\end{align}
+
+And from the fact that the photon is massless two more constraints are given:
+\begin{align}
+ \Pi_{\gamma\gamma}(0) = \Pi_{Z\gamma}(0) = 0 \nonumber
+\end{align}
+
+The remaining coefficients are expressed in terms of the oblique parameters
+\mycite{Burgess:1993vc}
+\begin{align}
+\hat{S}=\frac{g}{g'}\Pi_{3B}'(0), ~~ \hat{T}=\frac{\Pi_{33}(0)-\Pi_{+-}(0)}{m_W^2},~~ 
+\hat{U}=\Pi_{+-}'(0)-\Pi_{33}'(0),
+\end{align}
+\begin{align}
+&V= \frac{m_W^2}{2}( \Pi_{33}''(0)-\Pi_{+-}''(0) )~,~~~~&X= \frac{m_W^2}{2} \Pi_{3B}''(0)~~~\nonumber\\
+&Y= \frac{m_W^2}{2} \Pi_{BB}''(0) ~,~~ ~&W= \frac{m_W^2}{2} \Pi_{33}''(0)~~~ 
+\end{align}
+\more{MORE explanation for this}
+
+The parameters $\hat{S}, \hat{T}$, and $\hat{U}$ are \mycite{Peskin:1991sw} 
+\begin{align}
+ S=\frac{4 s_W^2 \hat{S}}{\alpha_W},~~ T=\frac{\hat{T}}{\alpha_W},~~U=-\frac{4 s_W^2 \hat{U}}{\alpha_W}
+\end{align}
+
+
+% \more{What is EWPT(in what sense am I using \emph{EWPT}?)}\\
+Also many parameters get compared to the observables and compatible results
+from LEP experiments:
+polarization in $\beta$-decay \cite{Koks:1976zec}, Muon decay\cite{Bardon:1965sd}, 
+Pion decay, Neutrion deep inelastic scattering\cite{deGroot:1978feq}, and etc.
+% Also, the experiments of $Z$ boson resonance via $e^-e^+$ annihilation has been performed 
+% with high accuracy not only to validate the SM but also to suggest guide lines to beyond the SM sector. 
+ Especially, $Z$ resononce via $e^+ e^-$ annihlation and $W$ mass measurement 
+ pertmit to test sevaeral observables:
+ forward/backward asymmetry from the processes $\to \ell\bar{\ell}$ or $\to f\bar{f}$,
+ cross section at $Z$ pole, left/right asymmetry, and etc.
+ Thess tests altogether usually are regarded as Electroweak Precision Tests(EWPT).
+
+The Standard quantities for these days are \emph{Particle Data Group} \mycite{Agashe:2014kda}. 
+\more{21 observables are used for testing Little Higgs models in this thesis 
+and they will be shown in the Table somewhere. }
+
+
+\paragraph{Naturalness ;; maybe this come after little higgs theory part}
+To see how much the observables of the model is fine tuned, we need to define a quantity. 
+There is no universal definition for the degree of fine-tunning, 
+thus, we use the definition of \mycite{rkaniHamed:2002qy}. % littlest higgs cite
+
+The fine-tunning 
+
+% \section{the Hierarchy problem}
+% 
+% % Explanation for introducing Little Higgs and Effective Field Theory
+% 
+% From the Lagrangian, the scalar particle or fermion can form loops 
+% which are quadratically divergent. 
+% 
+% For example, 
+% \begin{align}
+%  \cL
+% \end{align}
+% 
+

@@ -1,0 +1,179 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Phenomenology of LHT at the LHC}
+\label{chap:LHTsetup}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 이러이러한 모델의 특징이 있고, 새로운 입자들, 라그랑지안까지 했다 치면,  
+% % We made comparisons with the data from the LHC Run2 13TeV and
+% % made exclusion plots in the model parameter space.
+% % Until now, we only worked on the Littlest Higgs model, 
+% % but I hope we can also work on the Simplest Higgs model. 
+% 티페러티가 있는 리틀리스트 힉스 모델에서, 새로운 입자들이 관여하는 프로세스에 대해 생각해보자.
+% 그러면, $q_H q_H$, $q_H V_H$, $V_H V_H$, $T^\pm T^\pm$, $T^+ q_{SM}$, $T^+ W$ 이렇게 생성될수 있다. 
+% 
+% $q_H q_H j$은 더블카운팅으로 들어가고. 
+% $T^+$는 T-parity even 이므로 표준모형 입자와 연관되어서 생성될수있는 유일한 리틀힉스모델 입자이다. 
+% 
+% 
+\section{ processes, reasons, production cross section, branching ratio}
+
+\paragraph{processes with new particles}
+We consider 6 processes for studying this model.  
+\begin{enumerate}
+\item $p p \rightarrow q_H q_H, q_H \bar{q}_H, \bar{q}_H \bar{q}_H$,
+\item $p p \rightarrow q_H V_H$,
+\item $p p \rightarrow f_H \bar{f}_H$
+\item $p p \rightarrow V_H V_H$,
+\item $p p \rightarrow T_+ T_+, T_- T_-$
+\item $p p \rightarrow T_+ \bar{q}, \bar{T}_+ q, T_+ W^\pm, \bar{T}_+ W^\pm$
+\end{enumerate}
+% 왜 이 프로세스를 선택했는가. 이 프로세스의 특징은 무엇인가. ... 
+These are regarded as the major production channels of LHT particles in the LHC.
+
+Here, I will refer to T-parity o1d quarks, $u_H,~d_H,~c_H,~s_H,~b_H,~t_H$, as $q_H$; 
+heavy gauge bosons, $A_H, Z_H, W_H$, as $V_H$; and
+T-parity odd leptons, $e_H, \nu_H, \tau_H, \mu_H$ as $f_H$. 
+
+For T-parity conservation, all of T-parity odd particles are produced in pairs. 
+Among LHT particles, only $T_+$ introduced as a cancellon for Higgs-top loop divergence cancellation
+can be produced in association with SM particles because $T_+$ is T-parity even like SM particles. 
+
+\note{procduction crosssection plot.}
+Their production cross sections are  monotone decreasing functions, 
+which decrease with $f$ increaseing because
+all of the particles' masses are proportional to $f$.  
+% 왜 qhqhj은 없는지, 더블카운팅의 위험. T+- 의 질량에 영향을 미치는 R에 대해서도. 
+% Heavy vector bosons are .... % 무슨말 하려고 했었지... ?? ㅋㅋ
+% On the other hand, since T-parity odd quarks have mass terms also proportional to 
+% another parameter $\kappa$, their production cross sections decrease with $\kappa$ increasing. 
+
+
+\paragraph{Decay channels}
+\note{Branching ratio} \note{Decay channel table}
+
+T-odd quark $q_H$ decays into heavy gauge boson $V_H$ and SM quark, 
+if the process is kinematically allowed. 
+% and more into $W_H~q$ than $Z_H~q$ or $A_H~q$.
+% because of electric charge
+Although $V_H$ have several decay channels, under the such condition
+the dominant decay is $A_H$ related ones 
+like $W_H \rightarrow A_H W$, $Z_H \rightarrow A_H H$.  
+If $A_H$ does not decay as the lightest T-parity odd particle,
+the major final state of $q_H$ decay would be SM gauge boson and jets with the missing transverse momentum.
+ 
+Regarding of $V_H$ they can also decay to $q_H$ and SM quark 
+under the circumstance such as $M_{V_H} > M_{q_H}$. 
+And $q_H \rightarrow A_H q$ decays are following. 
+The major final state of the decay would be jets and the missing transverse momentum. 
+
+
+Thus, the signals to test LHT are various and it is dominantly up to the mass of $q_H$.
+So, We have studied this model with respect to the parameters:
+the center of mass energy $\sqrt{s}$ , the symmetry breaking scale $f$ and 
+the Yukawa coupling parameter of the extended LHT group $\kappa_q$, $\kappa_\ell$
+% The procduction processes have a variety of final state 
+% depending on the kinematical enviorenment and parameter scale. 
+
+
+
+
+\section{Benchmark scenarios}
+
+We have three benchmark models. These were considered to have insight into 
+the aspects of the LHT particles with respecting to the model parameters: $f$, $\kappa_q$, and $kappa_\ell$
+
+\subsection{Fermion universal model}
+First, {Fermion universal model} has an assumption that the $\kappa_q$ and $\kappa_\ell$ are equal. 
+We have scanned for the parameter space $(f,\kappa)$ where $\kappa~=~\kappa_q~=~\kappa_\ell$. 
+% The $\kappa$s appears as the paramater of Yukawa coupling coefficients for the extended LHT group. 
+Even if the T-odd fermion sector have the similar mass spectrum, 
+the production cross section related colour-charged fermions is much larger than
+that of the fermions colour neutral. 
+% the particle with colour charge $q_H q_H$ productions are dominant because the colour factor enhance 
+% even though 
+The variation of $f$ makes change to the mass of LHT particles, 
+while that of $\kappa$ has effects only on T-odd fermions mass. 
+As in the \note{mass formulae for $V_H$ and $q_H$}, if the $\kappa$ is less than
+$0.5$\note{need to check the exact value} it becomes true that $M_{V_H} > M_{q_H}$ and
+$W_H$ and $Z_H$ decays are fermionic. 
+Otherwise, $M_{q_H}$ gets heavier than $M_{V_H}$. 
+
+\note{FINE TUNNING PROBLEM }; in the region where $f$ is ``small'', there is not so fine-tuned area. 
+I want to talk about that too.
+
+\subsection{Heavy $q_H$ model}
+Second, {Heavy $q_H$ model} assumes T-parity odd quarks $q_H$ are heavier than T-parity odd leptons,
+which results from fixing $\kappa_q = 4.0 $. 
+as in the \note{mass formula ref.}, T-parity odd fermions mass terms are proportional to $\kappa_q,~ \kappa_\ell$. 
+\begin{align}
+ M_{u_H}=\kappa_q f ? , M_{d_H}= \kappa_q f \nonumber \\
+ M_{\ell_H} = \kappa_\ell f 
+\end{align}
+
+With the larger value of $\kappa_q$, $q_H$'s mass is getting much heavier to muli-TeV-scale.
+So, the $q_H$ is decoupled in the energy level where we looking at and 
+it is not possible to detect them in the LHC, which makes the processes related with $q_H$
+to play less important role. 
+Thus, we can have insight for colour-neutral T-odd particles interactions.
+% observe more impact from T-odd fermions $\ell_H$ except for $q_H$.
+
+
+
+\subsection{Light $\ell_H$ model}
+Lastly, for {Light $\ell_H$ model}, we fix $\kappa_\ell = 0.2$, which makes $\ell_H$ very light. 
+This permits to decay into more lectonic state. 
+Especially, heavy gauge bosons $V_H$ are expected to decay into $\ell_H$ and 
+it would be interesting to observe how the bounds be changed from that of Fermion universal model.
+
+
+
+
+\section{T-parity violation}
+Until now, I took account of only the case that $A_H$ does not decay as the lightest T-odd particle 
+thanks to T-parity conservation. 
+As I mentioned in the previous Chapter,
+from the gauge anomalies, it is possible to introduce the decays of $A_H$. 
+
+As in the \note{formula}, $A_H$ can decay into $WW$ and $ZZ$. 
+Also, taking loop-induced diagrams into account, fermionic decays can appear. 
+
+\note{Feynman DIAGRAMS!!}
+
+Although there are no more invisible particle assumed,
+Supersymmetry motivated searches are expected to use for analysis for this model
+because there are still the transverse missing momentum thanks to 
+the leptonic decays, $\ell \nu$, of $W$ boson and the invisible decay, $\nu\nu$, of $Z$ boson.
+
+
+
+\section{CheckMATE}
+For testing this model, CheckMATE was used.
+CheckMATE is an automatised program to test new physics at the LHC.
+From \Feynrules model file, UFO model file, 
+it can manage event generating, showering and hadronising by making use of \Madgraph, 
+\Pythia and \Delphes. 
+
+It determines the signal
+
+
+\note{SHOULD rephrase the following}
+
+For the main tasks of this numerical study, we make use of the collider analysis tool \Checkmate{} \cite{??}. 
+This program is useful to test a given BSM model in an automatised way. 
+It makes again use of the aforementioned  generator \Madgraph to simulate partonic events. 
+By making use of the \texttt{UFO} model description file format, \Madgraph is able to 
+simulate partonic events for a given BSM model which was implemented in a model building framework
+ like \texttt{FeynRules} or \texttt{SARAH}. The showering and hadronisation of these events is
+ subsequently performed by \texttt{Pythia8}, followed by the fast detector simulation \texttt{Delphes}
+ which considers the effect of measurement uncertainties, finite reconstruction efficiencies 
+and the jet clustering of the observed final state objects. 
+These detector events are then quantified by various analyses from both \texttt{ATLAS} and \texttt{CMS} 
+at centre-of-mass energies of 8 and 13 TeV (more details below). 
+Events are categorised in different signal regions and \Checkmate{} determines 
+which signal region provides the strongest expected limit. 
+If the input model predicts more signal events than are allowed by the observed limit of 
+that signal region, \Checkmate{} concludes that the model is \emph{excluded} at the 95\% confidence level, 
+otherwise the model is \emph{allowed}. 
+For more details on the inner functionality of CheckMATE, we refer to the manual papers in Refs.\cite{??}. 
+
+
+%  

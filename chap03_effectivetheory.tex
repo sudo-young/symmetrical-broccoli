@@ -1,0 +1,101 @@
+
+\chapter{Dimension-6 Operators Implementation into WHIZARD}
+
+\more{This chapter describes about the project to implement 6 dimensional operators into WHIZARD.}
+The operators are arised from the effective field theory formalism. 
+The resourcese I used for this chapter are \mycites{Grzadkowski:2010es}...
+
+\section{Effective Field Theory}
+% \section{}
+\label{sec:eft}
+
+\more{Some introduction to EFT... }
+
+% EFT, Howard Georgi; 
+
+% Why do we need exactly "Effective Field Theory"? What's special feature of EFT? 
+% Little Higgs / EFT both are handeling the hierarchy problem. -> light Higgs
+%  the Glashow-Weinberg condition. (GIM mechanism이 계속 작동하도록 하는.. ), 
+% 차지가 2/3인 쿼크랑 커플링하는 더블렛이랑, -1/3인 쿼크랑 커플하느 더블렛이랑 구분이 된다면 김 메카니즘이 작동 가능
+%  GIM FCNC가 안일어 나게, 룹다이어그램에서 서프레싱 해주는 거래.
+
+Because of renormalization conditions, 
+the dimension of the Lagrangian of the Standard Model has 4 space-time dimension.
+However, as considering the Standard Model as the low energy effective theory, 
+we can build up higher-dimensional operators such as 5- and 6-dimensional operators.
+
+\more{EFT looks like this to me:}
+Let's say there is a true happening in the high scale. 
+And we observe something in the accessible energy scale but they look different from the true one
+because it is converted to combinations of various processes while running down the energy level. 
+Although observing different signals, we make a guess about it
+by integrating out real vertices and matching and merging the processes. 
+
+\more{For example, tri-linear vector scattering}
+
+\note{In some approach to the effective field theory formalism}, 
+the Standard model is regarded as an effective field theory in the low energy level. 
+When there are anomalies, EFT can manage them by integrating out them.
+
+\begin{equation} 
+\mathcal{L}_{\mathrm{total}} = \mathcal{L}_{\mathrm{SM}} 
++ \sum_{k}\left[ \frac{1}{\Lambda} C_k^{(5)} \mathcal{O}_k^{(5)}
++ \frac{1}{\Lambda^2} C_k^{(6)} \mathcal{O}_k^{(6)} + \mathcal{O}\left(\frac{1}{\Lambda^3}\right) \right]
+\end{equation}
+where $\cL_{SM}$ is the Lagrangian of the SM and $\Lam$ is the cutoff scale that the SM is recovered from the full theory.
+$\cO^{(n)}$ corresponds to $n$-dimensional operator 
+and $C_k^{(n)}$ is its dimensionless coupling constant
+that will be determined by matching after integrating out the heavy fields. 
+
+Higher-dimensional operators are already derived long time ago by Buchm\"{u}ller and Wyler \mycite{k}.
+But in that paper, some operators were considered as duplicated physicswise
+because they are removed by the Equations of Motion and do not give contributions to on-shell matrix elements.
+Thus, we used GIMR basis in \mycite{Grzadkowski:2010es} and from now on we are following their point of view about the higher dimensional operators. 
+% That is  
+
+
+\paragraph{notation}
+\begin{align}
+ (D_\mu q)^{\alpha j} = [\delta_{\alpha \beta} \delta_{jk}(\partial_\mu + ig'Y_qB_\mu)
+  + ig \delta_{\alpha\beta}S_{jk}^I W_\mu^I + ig_s \delta_{jk} T_{\alpha\beta}^A G_\mu^A] q^{\beta k}\nonumber\\
+  \phi^\dagger i \overleftrightarrow{D}_\mu \phi \equiv i\phi^\dagger (D_\mu - \overleftarrow{D}_\mu)\phi~,
+~~\phi^\dagger i \overleftrightarrow{D}_\mu^I \phi \equiv 
+i\phi^\dagger (\tau^I D_\mu - \overleftarrow{D}_\mu \tau^I)\phi
+\end{align}
+
+
+\section{6-dimensional operators}
+In the SM, the renormalisable operators have 4 in spacetime dimension then of course, there is 5-dimensional operator as well.
+\paragraph{5-dimensional operator}
+Only one exists. Weinberg operator. Majorana term?
+
+
+
+\paragraph{Bosonic operators}
+And CP-even operators
+\begin{enumerate}
+ \item $\mathcal{O}_6$ = $(\Phi^\dagger \Phi)^3$
+ \item $\mathcal{O}_\Phi$ = $\partial_\mu (\Phi^\dagger \Phi) \partial^\mu (\Phi^\dagger \Phi)$
+ \item $\mathcal{O}_T$ = $(\Phi^\dagger D_\mu \Phi) (\Phi^\dagger D^\mu \Phi)$
+ \item $\mathcal{O}_{DW}$ = $(\Phi^\dagger \tau^I i \overleftrightarrow{D}^\mu \Phi) (D^\nu W_{\mu\nu})^I$
+ \item $\mathcal{O}_{DB}$ = $(\Phi^\dagger \overleftrightarrow{D}^\mu \Phi) (\partial^\nu B_{\mu\nu})$
+ \item $\mathcal{O}_{D \Phi W}$ = $i (D^\mu\Phi)^\dagger \tau^I (D^\nu \Phi)W_{\mu\nu}^I$
+ \item $\mathcal{O}_{D \Phi B}$ = $i (D^\mu\Phi)^\dagger \tau^I (D^\nu \Phi)B_{\mu\nu}^I$
+ \item $\mathcal{O}_{\Phi B}$ = $(\Phi^\dagger \Phi)B_{\mu\nu}B^{\mu\nu}$
+ \item $\mathcal{O}_{\Phi G}$ = $(\Phi^\dagger \Phi)G^A_{\mu\nu}G^{A\mu\nu}$
+ \item $\mathcal{O}_{G}$ = $f^{ABC} G^{A\nu}_{\mu} G^{B\rho}_{\nu} G^{C\mu}_{\rho}$
+ \item $\mathcal{O}_{W}$ = $\epsilon^{IJK} W^{I\nu}_{\mu} W^{J\rho}_{\nu} W^{K\mu}_{\rho}$
+\end{enumerate}
+
+
+
+\subsection{possible vertices}
+Using FeynRules, 
+\note{unitarisation scheme?} 
+% 이건 정말 생각지도 않아본 파트인데 ... 
+\note{yellow report}
+% 에는 뭐라고 나와있는지 읽어봐야겠다
+
+
+\section{WHIZARD}
+\subsection*{W Higgs Z Advanced Research D...ragon ;p}

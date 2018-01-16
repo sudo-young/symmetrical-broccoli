@@ -1,0 +1,878 @@
+\chapter{Little Higgs Models}
+\label{chap:littlehiggstheory}
+
+\section{Little Higgs mechanism}
+Little Higgs models manage the hierarchy problem
+that araises from the Higgs couplings 
+by the collective symmetry breaking
+\mycites{Coleman:1969sm} and \cite{Callan:1969sn}.
+Basically Little Higgs models have bigger group structure that the SM group is embedded in. 
+
+
+Assuming $g_1$ and $g_2$ break each symmetry, $G_1$ and $G_2$, 
+the Higgs will be left massless unless $G_1$ and $G_2$ are broekn collectively
+because an unbroken symmetry protects Higgs mass term.
+And the divergence contribution from the Higgs self-coupling would be logarithmic in the worst case.
+The naturalness is guaranteed until $f \sim 4\pi v$. 
+
+\note{this is just what I understood.. but need more details! for Collective Symmetry Beaking}
+
+\section{The Littlest Higgs Model}
+\cite{Han:2003wu}
+% This model is based on the group structure $SU(5)/SO(5)$. 
+\subsection*{Gauge and Scalar sector}
+The Littlest Higgs model has $SU(5)/SO(5)$ group structure
+which originally is spanned by 24 of generators for $SU(5)$ although it is broken into $SO(5)$ based on the non linear sigma model. 
+The vaccum expectation value causing the breaking from $SU(5)$ to $SO(5)$ is
+$\Sigma_0$ in the form of $5\times5$ matrix
+ \begin{equation}
+ \Sigma_0 =  ~ \left( \begin{array}{ccc}
+  &  & {\mathbf{1}}_{2 \times 2} \\
+  & 1 &  \\
+  {\mathbf{1}}_{2 \times 2} &  & 
+  \end{array}\right).
+  \end{equation}
+  And the sigma field that live in $SU(5)$ can be parameterised as
+ \begin{equation}
+ \Sigma ~=~ e^{i\Pi/f}~\Sigma_0~e^{i\Pi^T/f}~=~ e^{2i\Pi/f}~\Sigma_0. 
+ \end{equation}
+  with $\Pi=\pi^a X_a$ where $X$ is generators of $SU(5)$.
+ Under an $SU(5)$ transformation, it transforms with $V \in SU(5)$ as
+  \begin{align}
+  \Sigma ~~\to ~~ V \Sigma \tilde{V}^\dagger ~=~V\Sigma V^T .
+  \end{align}
+ Although the $SU(5)$ symmetry breaking into $SO(5)$ does not change about the vacuum 
+ \begin{align}
+  U ~\Sigma_0~ U^T = ~\Sigma_0, ~~~~~~~~ U~=~\exp[i\theta^a T_a]. \nonumber
+ \end{align}
+ We can express $\Sigma_0$ in another form with regard to $U$ and $\theta$ 
+ \begin{align}
+  \Sigma_0 = \Sigma_0 + i\theta^a (T_a \Sigma_0 + \Sigma_0 T_a^T ) + \cO(\theta^2).
+ \end{align}
+From the relations above, we obtain conditions for the broken generators $X_a$ and unbroken ones $T_a$ which are
+\begin{align}
+ \left\{ T_a, \Sigma_0 \right\} =0, \\
+ \left[ X_a, \Sigma_0 \right] =0. 
+\end{align}
+
+
+The Littlest Higgs model is categorised as \emph{Product Group models} of Little Higgs Models, which is because
+ its gauge symmetry group is $ G_1\times G_2 ~=~ (SU(2)_1\times U(1)_1)\times (SU(2)_2\times U(1)_2)$ embedded in $SU(5)$ as subgroups. 
+ These tow copies of $SU(2)\times U(1)$ are supposed to be broken collectively to generate Higgs mass, 
+ which results in drawing the limit where the Higgs mass need fine-tunning to $\cO(\unit[10]{TeV})$. \more{need to check if it is true :P}
+
+ %$(SU(2)_1\times U(1)_1) \times (SU(2)_2\times U(1)_2)$ 
+  $G_1 \times G_2$ is recovered into the electroweak gague group structure $SU(2) \times U(1)$ at the scale $f$. 
+  The generators of $G_1 \times G_2$ are 
+%   \begin{equation}\begin{split}       
+\begin{align}
+  Q_1^a =~ \frac{1}{2}\left( \begin{array}{cc}
+  \sigma^a  &  {\mathbf{0}}_{2 \times 3} \\
+  {\mathbf{1}}_{3 \times 2} &  {\mathbf{0}}_{3 \times 3} 
+  \end{array}\right), ~~~~&
+   Q_2^a =~ \frac{1}{2}\left( \begin{array}{cc}
+  {\mathbf{0}}_{3 \times 3} & {\mathbf{0}}_{2 \times 3} \\
+  {\mathbf{0}}_{3 \times 2} & - \sigma^a
+  \end{array}\right) \\
+  Y_1 =~ \frac{1}{10}\left( \begin{array}{cc}
+  -3 \cdot {\mathbf{1}}_{2\times 2}  &  {\mathbf{0}}_{2 \times 3} \\
+  {\mathbf{0}}_{3 \times 2} &  2\cdot {\mathbf{1}}_{3 \times 3} 
+  \end{array} \right), ~~~~~~&
+  Y2 =~ \frac{1}{10}\left( \begin{array}{cc}
+  -2 \cdot {\mathbf{1}}_{3\times 3}  &  {\mathbf{0}}_{2 \times 3} \\
+  {\mathbf{0}}_{3 \times 2} &  3\cdot {\mathbf{1}}_{2 \times 2} 
+  \end{array} \right)
+\end{align}
+ where $\sigma^a$ are Pauli matrices.
+ 
+  Since this model based on the non-linear sigma model 
+   the kinetic Lagrangian of the model is 
+  \begin{equation}
+   \cL_{\Sigma}~=~\frac{f^2}{8} {\rm{Tr}}|\cD_\mu \Sigma|^2
+  \end{equation}
+ where the covariant derivative is given by
+  \begin{equation}
+   \cD_\mu \Sigma ~=~ \partial_\mu \Sigma - i \sum_j \left[ g_j W_j^a(Q_j^a \Sigma + \Sigma Q_j^{a^T}) + g_j'B_j(Y_j\Sigma + \Sigma Y_j) \right] .
+  \end{equation}
+  
+ From the $SU(5)/SO(5)$ symmetry breaking 14 Nambu-Goldstone bosons appear, which are 
+ \begin{align}
+   \pi^a X_a =~\left( \begin{array}{ccc}
+  \frac{1}{2} X  &  \frac{1}{\sqrt{2}} H^\dagger & \Phi^\dagger \\
+  \frac{1}{\sqrt{2}} H & \frac{2}{\sqrt{5}}\eta  & \frac{1}{\sqrt{2}} H^*\\
+  \Phi & \frac{1}{\sqrt{2}} H^T &  \frac{1}{2} X
+  \end{array}\right)
+ \end{align}
+where 
+\begin{align}
+   \pi^a X_a =~\left( \begin{array}{cc} \chi^0 - \frac{1}{\sqrt{5}}\eta &  \sqrt{2}\chi^\dagger \\ \sqrt{2}\chi^- & -\chi^0-\frac{1}{\sqrt{5}}\eta   \end{array}\right), ~~~
+   \phi =~\left( \begin{array}{cc} \phi^{++} &  \frac{1}{\sqrt{2}}\phi^+ \\ \frac{1}{\sqrt{2}}\phi^+ \ & \phi^0   \end{array}\right),~~~
+   H^T =~\left( \begin{array}{c} \pi^{+} \\ \frac{h+i\pi^0}{\sqrt{2}}\end{array}\right).
+\end{align}
+
+ The NGBs are decomposed in $SU(2) \times U(1)$ as $\mathbf{1_0 \oplus 3_0 \oplus 2_{\pm\frac{1}{2}} \oplus 3_{\pm1} }$. 
+ Among them, the one corresponding to the SM-like Higgs field is complex doublet $\mathbf{2_{\pm\frac{1}{2}}}$ $H$. 
+ And $\Phi$ is the complex triplet $\mathbf{3_{\pm1}}$
+ $\eta$ is the real singlet $\mathbf{1_0}$ and $\chi$ refers to the real triplte $\mathbf{3_0}$, those are eaten by the heavy gaue bosons. \more{both? or only $\chi$?}
+ 
+While the symmetry breaking at scale $f$, there is mixing between $G_1$ and $G_2$ and 
+under the rotation, the mass eigenstates of the gaue fiels are given by
+\begin{align}
+ W = sW_1 + cW_2, ~~~~~& W_H=-cW_1 + sW_2 \nonumber \\
+ B = s'B_1 + c'B_2, ~~~~~& A_H= -c' B_1+ s'B_2 
+\end{align}
+with \begin{align}
+c=\frac{g_1}{\sqrt{g_1^2 + g_2^2}}, c'=\frac{g_1'}{\sqrt{g_1'^2 + g_2'^2}}
+     \end{align}
+And the gauge bosons ate NGBs become massive,  
+which masses are 
+ \begin{align}
+  m_{W_H^\pm} = m_{Z_H}=\frac{gf}{2sc}, ~~~~~ m_{A_H} = \frac{g'f}{2\sqrt{5}s'c'}
+ \end{align}
+where primed ones are of $U(1)$s and uprimed one are of $SU(2)$s.
+Also, $g$ and $g'$ are the coefficients of the electroweak gauge group $SU(2)\times U(1)$ and they are 
+\begin{align}
+ g=g_1 s = g_2c, ~~~~~ g' = g_1's' = g_2' c' 
+\end{align}
+
+\more{And $\vev$ correction terms? and Higgs potential?}
+
+
+
+% 
+% Like other BSM models, 
+% the Littlest Higgs model has been suffered from the constraints of the electroweak precision test. 
+\subsection*{Fermion sectors}
+\more{vectorlike top}\\
+\more{yukawa lagrangian of 3rd generation}\\
+\more{mass of tops}\\
+\more{1loop correction term to higgs mass of CW potential}
+
+
+
+
+\section{The Littlest Higgs Model with T-Parity}
+\mycites{Cheng:2003ju} and \cite{Cheng:2004yc},
+Just as its name tells us, the Littlest Higgs model with T-parity share the same global and gauge group structure with the Littlest Higgs model 
+but \emph{T-parity} is applied additionally. 
+The main role of T-parity is to alleviate the electroweak precision constraints on the model.
+T-parity is not a quantity related with time symmetry, but it is a discrete symmetry acting on $\cO(\unit[]{TeV})$ scale
+behaving similarly to R-parity of Supersymmetric Standard model.  
+T-parity is a kind of automorphism between the two groups $SU(2)_1\times U(1)_1 \times SU(2)_2 \times U(1)_2 $.
+\more{need more here}
+
+
+
+\subsection{T-parity conservation case}
+\subsubsection*{Gauge and Scalar sectors}
+Under \emph{T-parity}, the generators of $SU(5)$ and $SO(5)$ are transfomed as
+\begin{align}
+ T^a &\to T^a \nonumber\\
+ X^a &\to - X^a.  \nonumber
+\end{align}
+And the scalar fields can be transfomed as 
+\begin{align}
+  \Pi ~\to~ -\Omega \Pi \Omega 
+  \end{align}
+  \begin{align}
+  {\rm{where~~}}\Omega =~\left( \begin{array}{ccc} \mathbf{1}_{2\times2}&& \\ &-1& \\ &&\mathbf{1}_{2\times2}  \end{array}\right). \nonumber
+\end{align}
+
+
+
+Also, under T-parity, the gauge bosons of $G_1$ are converted to ones of $G_2$ and vice versa.
+\begin{equation}
+ W_{1\mu}^a ~ \xrightarrow{T} ~W_{2\mu}^a ~,~~
+ B_{1\mu}~ \xrightarrow{T} ~B_{2\mu}
+\end{equation}
+
+This feature of T-parity fixes the mixing angle as $4/\pi$, that is, 
+with \begin{align}
+s=\frac{g_2}{\sqrt{g_1^2 + g_2^2}}=c=\frac{g_1}{\sqrt{g_1^2 + g_2^2}}=\frac{1}{\sqrt{2}}, \nonumber \\ 
+s'=\frac{g_2'}{\sqrt{g_1'^2 + g_2'^2}} = c'=\frac{g_1'}{\sqrt{g_1'^2 + g_2'^2}} = \frac{1}{\sqrt{2}} 
+\end{align}
+and it fixes also the gauge coupling coefficients as 
+\begin{align}
+ g_1~=~g_2~=~\sqrt{2}g \nonumber\\
+ g_1'~=~g_2'~=~\sqrt{2}g'
+\end{align}
+
+\begin{equation}
+ m_{W_H}=m_{Z_H}= g f , ~ m_{A_H} = \frac{g'f}{\sqrt{5}}
+ \label{eq:LHT:VH}
+\end{equation}
+where 
+
+\subsubsection*{Fermion sectors}
+For applying the collective symmetry breaking to fermion fields,
+another state is introduced to the third generation quark doublet 
+and this forms an incomplete $SU(5)$ multiplet
+\begin{align}
+  \Psi = \left( \begin{array}{c}
+  i b_L \\
+  -it_{1L} \\
+  t_{2L} \\
+  \mathbf{0}_{2\times1}
+  \end{array}\right) 
+  = \left( \begin{array}{c}
+  q_L \\
+  t_{2L} \\
+  \mathbf{0}_{2\times1}
+  \end{array}\right), 
+\end{align}
+where $q_L$ is the quark double of the SM. 
+Under T-parity, this transforms like
+\begin{align}
+ \Psi \leftrightarrow - \Sigma_0 \Psi'
+\end{align}
+where
+\begin{align}
+  \Psi' = \left( \begin{array}{c}
+  \mathbf{0}_{2\times1}\\
+  t'_{2L} \\
+  i b'_L \\
+  -i t'_{1L} 
+  \end{array}\right) 
+  = \left( \begin{array}{c}
+  \mathbf{0}_{2\times1}\\
+  t'_{2L} \\
+  q'_L 
+  \end{array}\right), 
+\end{align}
+
+
+
+T-parity invariant Lagrangian
+\begin{align}
+ \mathcal{L}_Y \supset &\frac{\lam_1 f}{2 \sqrt{2}}\eps_{ijk} \eps_{xy} 
+ ( \bar{\Psi}_i \Sigma_{jx} \Sigma_{ky} - (\bar{\Psi'})_i \tilde{\Sigma}_{jx} \tilde{\Sigma}_{ky} )t_{1R} \nonumber\\
+ & + \lam_2 f (\bar{t}_{2L}t_{2R} + \bar{t'}_{2L} t_{2R} ) + h.c.
+\end{align}
+With the T-parity eigenstates, 
+\begin{align}
+ \mathcal{L}_Y \supset &\lam_1 f ( \frac{s_{\Sigma}}{\sqrt{2}}\bar{t}_{1L+}t_{1R+} 
+  + \frac{1+c_{\Sigma}}{2}\bar{t}_{2L+}t_{1R+}) \nonumber\\
+  & + \lam_2 f ( + \bar{t'}_{2L+} t_{2R+} + \bar{t}_{2L-}t_{2R-} ) + h.c.
+\end{align}
+where \begin{align}
+       q_{L\pm}=\frac{1}{\sqrt{1}}(q_L\mp q'_{L})& \nonumber\\
+       t_{2L\pm}=\frac{1}{\sqrt{2}}(t_{2L}\mp t'_{2L}),~&
+       t_{2R\pm}=\frac{1}{\sqrt{2}}(t_{2R}\mp t'_{2R}) 
+      \end{align}
+
+     
+ the mass spectrum for top quarks,
+ \begin{align}
+  m_{t_{SM}}=m_{t+}=\frac{\lam_1 \lam_2}{\sqrt{\lam_1^2 + \lam_2^2}}v=\frac{\lam_2 R}{\sqrt{1+R^2}}v, \nonumber\\
+  m_{T-} = \lam_2 f=\frac{m_t+}{v}\frac{f\sqrt{1+R^2}}{R} ~~, m_{T+}=m_{T-}\sqrt{1+R^2}=\frac{m_{t+}}{v}\frac{f\sqrt{1+R^2}}{R}. 
+  \label{eq:LHT:Tpm}
+ \end{align}
+ 
+ 
+Up-type quarks for the first and second generations have the similar Lagrangian
+with the top quark except for the vector like quark. 
+
+Yukawa Lagrangian for other fermion fields,
+\begin{align}
+ \mathcal{L}_{Y} \supset \frac{i\lam_d f}{2\sqrt{2}}\eps_{ij}\eps_{xyz} ( \bar{\Psi'}_x\Sigma_{jy} \Sigma_{jz} X - 
+  (\bar{\Psi} \Sigma_0)_x \tilde{\Sigma}_{iy}\tilde{\Sigma_{jz}}\tilde{X}) d_R
+\end{align}
+
+$X$ is inserted for gauge invariance, which is a singlet under $SU(2)_{1,2}$ and 
+has $U(1)_{1,2}$ charges, $(Y_1, Y_2)=(1/10, -1/10)$. 
+$X$ is regarded as $X=(\Sigma_{33})^{-1/4}$ for \emph{Case A} and $X=(\Sigma_{33})^{1/4}$ for \emph{Case B},
+where is the $(3,3)$ component of the non-linear sigma model field $\Sigma$. 
+
+
+To give rise to mass terms for the T-odd fermions without introducing any anomalies, 
+another $SO(5)$ multiplet $\Psi_c$ is introduced as
+\begin{align}
+   \Psi_c = \left( \begin{array}{c}
+  i d_c \\
+  -iu_{c} \\
+  \chi_{c} \\
+  i \tilde{d}\\
+  -i \tilde{u}_c
+  \end{array}\right) 
+  = \left( \begin{array}{c}
+  q_c \\
+  \chi_{c} \\
+  \tilde{q}_c
+  \end{array}\right), 
+\end{align}
+
+$q_c$ is called mirror fermion. 
+
+Its T-parity invariant Lagrangian is 
+\begin{align}
+ \mathcal{L}_\kappa = 
+ -\kappa f (\bar{\Psi'}\xi\Psi_c +\bar{\Psi}\Sigma_0 \Omega \xi^\dagger\Omega\Psi_c ) + h.c. .
+\end{align}
+
+This Lagrangian not only adds the T-odd mass terms but also 
+imposes new interactions between Higgs boson and up-type partners.
+\begin{align}
+ \mathcal{L}_\kappa \supset &-\sqrt{2}\kappa f (
+ \bar{d}_{L-}\tilde{d}_{c} + \frac{1+c_\xi}{2} \bar{u}_{L-} \tilde{u}_c  \nonumber\\
+ &-\frac{s_\xi}{\sqrt{2}}\bar{u}_{L-} \chi_c -\frac{1-c_\xi}{2}\bar{u}_{L-} u_c )
+ + h.c. + \cdots
+\end{align}
+where $c_\xi = \cos((v+h)/\sqrt{2}f)$, $s_\xi=\sin((v+h)/\sqrt{2}f)$. 
+
+We call $\kappa$ as $\kappa_q$ when it is the coupling coefficient 
+for the coupling of Higgs and T-odd quarks
+and $\kappa_l$ for the coupling of Higgs and T-odd leptons.
+
+The mass spectrum for the T-odd fermions are given at order $\mathcal{O}(v^2/f^2) $ by
+\begin{align}
+ m_{u-}=\sqrt{2}\kappa_q f (1-\frac{1}{8}\frac{v^2}{f^2}), ~~m_{d-}=\sqrt{2}\kappa_q f
+ \label{eq:LHT:qH}
+\end{align}
+
+\begin{align}
+ m_{\ell_H}=\sqrt{2}\kappa_\ell f
+ \label{eq:LHT:lH}
+\end{align}
+
+\more{$\ell_H$ mass term! }
+
+\more{1loop correction term to higgs mass of CW potential}
+
+
+\subsection{T-parity violation case}
+\label{sec:LHT:TPV}
+\more{More details and explanations here!}
+Considering anomalous Wess-Zumino-Witten term as in \mycite{Freitas:2008mq}, 
+we can see decays that violate T-parity. 
+Thanks to this kind of decay, $A_H$ can decay to the SM particles.
+\begin{align} \label{eq:LHT:TPVzz}
+  \Gamma(A_H \rightarrow ZZ) = \frac{1}{2\pi}\big( \frac{Ng'}{40\sqrt{3}\pi^2} \big)^2\frac{m_{A_H}^3 m_Z^2}{f^4}
+ \big( 1-\frac{4 m_Z^2}{m_{A_H}^2} \big)^{\frac{5}{2}}  \\
+ \label{eq:LHT:TPVww} 
+ \Gamma(A_H \rightarrow W^+ W^-) = \frac{1}{\pi}\big( \frac{Ng'}{40\sqrt{3}\pi^2} \big)^2 \frac{m_{A_H}^3 m_W^2}{f^4}
+ \big( 1-\frac{4 m_W^2}{m_{A_H}^2} \big)^{\frac{5}{2}}  
+\end{align}
+
+\begin{align} \label{eq:LHT:TPVff}
+ \Gamma&(A_H \rightarrow ff) = 
+ \frac{N_{C_f}M_{A_H}}{48\pi}\sqrt{1-\frac{4m_f^2}{M_{A_H}^2}} 
+ \big( (c_R - c_L )^2(1-\frac{4m_f^2}{M_{A_H}^2}) + (c_R + c_L)^2(1+\frac{2m_f^2}{M_{A_H}^2}) \big)
+\end{align}
+
+\eq{LHT:TPVzz}, \eq{LHT:TPVww}, \eq{LHT:TPVff} are T-parity breaking decay channels 
+of $A_H$. 
+% 
+% \begin{table*}
+% \begin{tabular}{c}
+% \toprule
+% $ \Gamma(A_H \rightarrow ZZ) =$  
+% $\frac{1}{2\pi}\big( \frac{Ng'}{40\sqrt{3}\pi^2} \big)^2\frac{m_{A_H}^3 m_Z^2}{f^4} \big( 1-\frac{4 m_Z^2}{m_{A_H}^2} \big)^{\frac{5}{2}}  $ \\
+% $ \Gamma(A_H \rightarrow W^+ W^-) =$ 
+% $\frac{1}{\pi}\big( \frac{Ng'}{40\sqrt{3}\pi^2} \big)^2 
+%  \frac{m_{A_H}^3 m_W^2}{f^4} \big( 1-\frac{4 m_W^2}{m_{A_H}^2} \big)^{\frac{5}{2}} $\\
+% $\Gamma(A_H \rightarrow ff) =$
+% $ \frac{N_{C_f}M_{A_H}}{48\pi}\sqrt{1-\frac{4m_f^2}{M_{A_H}^2}}
+%  \big( (c_R - c_L )^2(1-\frac{4m_f^2}{M_{A_H}^2}) + (c_R + c_L)^2(1+\frac{2m_f^2}{M_{A_H}^2}) \big)$\\
+% \bottomrule
+% \end{tabular}
+% \caption{Coefficients for the }
+% \label{tab:benchmarks}
+% \end{table*}
+
+where $c_L$ and $c_R$ are the coefficients of the left and right chiral progectors 
+and they are shown in \tbl{TPVcoeffi}. 
+
+\begin{table*}%[h]
+\begin{center}
+ \begin{tabular}{|l|c|c|}
+\hline
+% Particles & $c_{L,\eps}^f$ & $c_{R,\eps}^f$ \\
+Particles & $c_{L}^f$ & $c_{R}^f$ \\
+\hline
+$A_H e^+ e^-$  & $\frac{9 \hat{N}}{160\pi^2} \frac{v^2}{f^2} g^4 g' (4 + (c_w^{-2}-2t_w^2)^2)$ & $-\frac{9\hat{N}}{40\pi^2}\frac{v^2}{f^2} g'^5$  \\[4pt]
+$A_H \bar{\nu}\nu$ & $\frac{9 \hat{N}}{160\pi^2} \frac{v^2}{f^2} g^4 g' (4 + c_w^{-4})$ & 0  \\[4pt]
+$A_H \bar{u}_a u_b$  & $-\frac{\hat{N}}{160\pi^2} \frac{v^2}{f^2} g^4 g' (36 + (3c_w^{-2}-4t_w^2)^2)\delta_{ab}$ & $-\frac{\hat{N}}{10\pi^2}\frac{v^2}{f^2} g'^5 \delta_{ab}$  \\[4pt]
+$A_H \bar{d}_a d_b$  & $-\frac{\hat{N}}{160\pi^2} \frac{v^2}{f^2} g^4 g' (36 + (3c_w^{-2}-2t_w^2)^2)\delta_{ab}$ & $-\frac{\hat{N}}{40\pi^2}\frac{v^2}{f^2} g'^5 \delta_{ab}$  \\[4pt]
+\hline
+\end{tabular}
+\caption{Coefficients for the $A_H$ TPV decays}
+\label{tab:TPVcoeffi}
+\end{center}
+\end{table*}
+% 
+\section{The Simplest Little Higgs Model}
+\mycite{Schmaltz:2004de}, \mycite{Han:2005ru}
+
+The Simplest Little Higgs model is one of the Little Higgs models where the Little Higgs mechanism is executed in the simply extended group structure,
+which is in the form of $SU(N)\times U(1)$. As we can guess from its name, the Simplest Little Higgs model has the minimun value for $N$,
+that is, this model has $SU(3)\times U(1)/ SU(2)\times U(1)$ as the group structure.
+% The CSB can happen in the simple group structure,
+% of which group structure is $SU(N)\times U(1)/ SU(2)\times U(1)$.
+% The Simplest Little Higgs model (SLH) is the case where $N$ is the smallest number
+% among the CSB happening for the simple groups. 
+% % % % % % % % % % % %  영어가 이상. 다시 써봐야징
+
+From the $SU(3)\times U(1)_X / SU(2)_W \times U(1)_Y $ symmetry breaking, 
+ 5 NGBs appear, which are eaten by $Z',~X^{\mp},~Y^0,$ and $\bar{Y^0}$.
+%$Z_H,~W_H^{\pm},~W^{0,0'}$.   Then where does the Higgs come from???????????
+
+To achieve the CSB mechanism, we need doubled of the gauge groups.
+\begin{align}
+ (SU(3)_1\times U(1)_1 \times SU(3)_2\times U(1)_2)/ (SU(2)\times U(1))^2 \label{eq:gaugegroup}
+\end{align}
+
+\subsection*{Gauge and Scalar sectors}
+The vacuum expecation values to trigger the symmetry breaking 
+for this group structure $(SU(3)\times U(1))^2/ (SU(2)\times U(1))^2$
+are $\Phi_1, ~ \Phi_2$, which are not distinguishable in principle, 
+but the subscription is for our convinience.
+They are given by
+\begin{align}
+ \Phi_1 = e^{i\Theta f_2/f_1}  ~ \left( \begin{array}{c}
+  0 \\
+  0  \\
+  f_1
+  \end{array}\right) ,~~
+  \Phi_2 = e^{i\Theta f_1/f_2}  ~ \left( \begin{array}{c}
+  0 \\
+  0  \\
+  f_2
+  \end{array}\right) ,~~ 
+\end{align}
+where 
+\begin{align}
+ \Theta = \frac{1}{f} ~ \left[ \left( \begin{array}{ccc}
+  0 & 0 & h\\
+  0 & 0 &  \\
+  h^\dagger & & 0
+  \end{array}\right) 
+  + \frac{\eta}{\sqrt{2}} \left( \begin{array}{ccc}
+  1 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+  \end{array}\right)   \right], ~~~~ 
+  h = \left( \begin{array}{c}
+              h^0\\
+              h^-
+             \end{array}    \right) . 
+\end{align}
+
+$h^T=(h^0, h^-)$ is complex scalar doublet corresponding to the Higgs.
+$f_1, f_2$ are the symmetry breaking scale and 
+they can be redefine as $f=\sqrt{f_1^2 + f_2^2}$ and $\tan \beta~=~f_1 /f_2$.
+Also, we frequently use $\cos\beta=f_1/\sqrt{f_1^2 + f_2^2}$ ($c_\beta$) 
+and $\sin\beta=f_2/\sqrt{f_1^2 + f_2^2}$ ($s_\beta$).
+
+
+
+\paragraph{Scalar particles}
+\more{SLH paper : \mycite{Schmaltz:2004de} and pseudoaxion: \mycite{Kilian:2004pp}}\\
+The Higgs potential can be written like
+\begin{align}
+ V=m^2 h^\dagger h + \lam (h^\dagger h )^2,
+\end{align}
+where $m$ is required to be negative for Electroweak symmetry breaking. 
+
+We extend this potential for this model with the scalar fields $\Phi_1, \Phi_2$
+\begin{align}
+ V~&=~\mu^2 \Phi_1^\dagger \Phi_2 + {\rm{h.c.}}\nonumber\\
+  & = 2s_\beta c_\beta \mu^2\cos\left( \frac{\eta}{\sqrt{2}s_\beta c_\beta} \right)
+  \left[ 1-\frac{1}{2s_\beta^2 c_\beta^2}(h^\dagger h) + \frac{f(h^\dagger h)^2}{24s_\beta^3 c_\beta^3}+... \right].
+\end{align}
+
+
+In the SLH model, the scalar fields are given the radiative correction to the mass terms
+by Coleman-Weinberg mechanism that generates one-loop correction to the Higgs mass $\delta m^2$
+as well as to quartic couplings. 
+\begin{align}
+ \delta m^2 = -\frac{3}{8\pi^2}\left[ \lam_t^2 m_T^2 \log\left(\frac{\Lam^2}{m_T^2}\right)
+  - \frac{g^2}{4} m_{X}^2\log\left(\frac{\Lam^2}{m_X^2}\right)
+  - \frac{g^2}{8}(1+\tan^2\theta_w)m_{Z'}^2\log\left(\frac{\Lam^2}{m_{Z'}^2}\right) \right]
+\end{align}
+
+
+Thus, in total the potential for the scalar fields can be written as 
+\begin{align}
+ V &= \left(\delta m^2 + \frac{\mu^2}{s_\beta c_\beta}\right) h^\dagger h + \frac{\mu^2}{s_\beta c_\beta}\frac{\eta^2}{2}
+  -\left(\frac{\mu^2}{12(s_\beta c_\beta f)^2} - \delta \lam\right)(h^\dagger h)^2 \nonumber\\
+  &~~~~~- \frac{\mu^2}{12(s_\beta c_\beta f)^2} \left(\frac{\eta^4}{4} + \frac{3(h^\dagger h)\eta}{2} \right)+ ...
+\end{align}
+where $\mu$ is free parameter that is introduced to manage the Higgs mass 
+and $s_\beta,~c_\beta$ are the quantities about the ratio of the symmetry breaking scale for the extended group.
+Clearly, there are the Higgs and the $\eta$ mass terms,
+\begin{align}
+ m_\eta^2 =& \frac{\mu^2}{s_\beta c_\beta} \label{eq:etamass} \\
+ m_H^2 =& -2(\delta m^2 + m_\eta^2) \label{eq:higgsmass}
+\end{align}
+
+
+
+
+
+\paragraph{The heavy gauge boson mass terms} are given 
+from the expansion of the nonlinear sigma model Lagrangian, which are in the forms of 
+% Using $f$ and the weak mixing angle $\theta_w$, heavy gauge boson mass terms are expressed by
+\begin{align}
+ M_{X^\mp} = \frac{g f}{\sqrt{2}}, ~~~ M_{Z_H} = g f \sqrt{\frac{2}{2-\tan\theta_w}}.
+\end{align}
+where $\theta_W$ is the weak mixing angle and the covariant derivative $D_\mu$ is given by
+\begin{align}
+ \cD_\mu~=~(\partial_\mu + i g A^a T_\mu^a + i g_x B_\mu)  .
+\end{align}
+where $B_\mu$ is the gauge boson of $U(1)$ and $A_a T^a$ includes $SU(3)$ gauge bosons as its components,
+\begin{align}
+ A^a T^a = \frac{A^3}{2}\left( \begin{array}{ccc} 1 &  & \\ & -1 &  \\  & & 0 \end{array}\right) 
+ + \frac{A^8}{2\sqrt{3}}\left( \begin{array}{ccc} 1 &  & \\ & 1 &  \\  & & -2 \end{array}\right) 
+ + \frac{1}{\sqrt{2}}\left( \begin{array}{ccc} & W^+ &Y^0\\W^- & &X^-\\ \bar{Y}^0 &X^+& \end{array}\right) 
+\end{align}
+
+
+In total, this model have 2 symmetry breaking procedure; one is into the SM gauge group structure $SU(2)\times U(1)$ 
+and another is the Electroweak symmetry breaking.
+We can find the trajactories of these symmetry breaking from their expressions in terms of the mass eigenstates. 
+
+Before Electroweak symmetry breaking, 
+The gauge bosons $Y$
+
+This model is based on the nonlinear sigma model, accordingly 
+the Lagrangian for scalar and gauge boson part is given by 
+\begin{align}
+ \cL = \big| \big(\partial_\mu+igA_\mu^a T^a -\frac{ig_x}{3} B_\mu^x \big) \Phi_i \big|^2
+\end{align}
+
+
+The heavy gauge bosons' expressions are 
+\begin{align}
+ Z_0'=\frac{\sqrt{3}g A^8 + g_x B^x}{\sqrt{3 g^2 + g_x ^2}} 
+ = \frac{1}{\sqrt{3}}(\sqrt{3-\tan^2\theta_w}A^8 + \tan\theta_w B^x) \\
+ B=\frac{-g_x A^8 + \sqrt{3}g B^x}{\sqrt{3 g^2 + g_x ^2}} 
+ = \frac{1}{\sqrt{3}}(-\tan\theta_w A^8 + \sqrt{3-\tan^2\theta_w} B^x) \\
+\end{align}
+
+g is the coupling constant of $SU(2)$ that is equal to that of $SU(3)$.
+$g_x$ refers to the coupling constant of $U_X(1)$ which is mixed as 
+$g_x = \frac{g \tan\theta_w}{\sqrt{1-\tan^2\theta_w / 3}}$
+
+Hypercharges follow $Y=-\frac{1}{\sqrt{3}}T^8 + Q_X$
+with the eigenvalue of 8th generator of $SU(3)$,  $T^8=\frac{1}{2\sqrt{3}}{\rm{diag}}(1,1,-2)$,
+where $Y$ is the hypercharge of $U_Y(1)$ and $Q_X$ is that of $U_X(1)$.
+
+
+
+\subsection*{Fermion sectors}
+Thanks to its peculiar group structure, we have to find the proper way to 
+decompose in for fermions. 
+There are two way for this: \emph{universal} and \emph{anomaly-free}.
+It is better to focus on anomaly-free way because this way makes the anomalies cancelled, 
+as well as univeresal way is already excluded.
+\more{Why it is called \emph{anomaly-free} }
+
+The quarks of the third generation and the leptons are expressed with the triplets of $SU(3)$ and also in the singlets. 
+\begin{align}
+ L_m^T=(\nu,e,iN)_m,~~&~~~ ie_m^c, iN_m~~&~~{m\in\{1,2,3\}} \nonumber\\
+ Q_3^T= (t,b,iT), ~~&~~~it^c, ib^c,iT^c ~~&~ 
+\end{align}
+where $m$ is the generation index and $N_m$ is new heavy particle as the partner of neutrino. 
+The heavy vector-like top and bottom quark have electric charge $+2/3$.
+These are same way to decompose with that of \emph{universal}.
+With regard to anomaly-free decomposition, the first and second generation quarks are given by 
+\begin{align}
+ Q_1^T= (d,-u,iD), ~~ &~~  id^c, iu^c, iD^c ~~& ({\rm{anomaly~free}})\nonumber\\
+ Q_2^T= (s,-c,iS),~~ &~~ is^c, ic^c, iS^c ~~ & ~~
+\end{align}
+which have electirc charge $-1/3$.
+\more{need quantum number charge table for the all quarks }
+
+\subsubsection*{Lepton mass}
+The mass terms for leptons are generated from the Lagrangian
+\begin{align}
+ \cL ~=~ i \lam_{N_m} N_m^c \Phi_2^\dagger L_m 
+ + \frac{i \lam_e^{mn}}{\Lam}e_m^c \eps_{ijk}\Phi_1^i \Phi_2^j L_n^k + {\rm{h.c.}}, 
+\end{align}
+where $n,~m$ are the indices for generations of leptons. 
+The heavy neutrino partners $N_m$ have mass term
+\begin{align}
+ M_{N_m} ~=~ \lam_{N_m}s_\beta f \nonumber
+\end{align}
+from the first term of the Lagrangian. 
+The second term has 5 spacetime dimension, which is normalised by $\Lam$ cutoff scale. 
+Also, this operator give rise to mass terms to charged leptons 
+by the mixing matrix $V_{im}^\ell$ between $e_i$ and $N_m$ similarly with the CKM mixing,
+which can happen in association with the gauge boson $X^-$ in the $X^- \bar{e_i} N_m$ coupling 
+that can be found in the Lagrangian as
+\begin{align}
+ \cL \supset -\frac{g}{\sqrt{2}} V_{im}^\ell X_\mu^- \bar{e_i}\gamma^\mu P_L N_m~~ .
+\end{align}
+But, the mixing is suppressed by GIM mechanism and as diagonalising $V_{im}^\ell$, it vanishes.
+
+\more{lepton flavor violation}
+
+
+After the EWSB, mixing between neutrinos $\nu_{m0}$ and the heavy neutrino partners $N_{m0}$ appears at order $v/f$.
+\more{more about the mixing and mixed basis in detail}
+\begin{align}
+ N_{m0} = N_{m} + \delta_\nu V_{mi}^{\ell\dagger} \nu_i, ~~~~~~~~
+ \nu_{i0} = (1-\frac{1}{2}\delta_\nu^2) \nu_i - \delta_\nu V_{im}^\ell N_m .
+\end{align}
+
+
+
+\more{interations between heavy gauge bosons $X\pm, Y^0$ and $\bar{Y^0}$}
+
+
+\subsubsection*{Lepton couplings to gauge bosons} 
+can be found from the fermion kinetic terms of the Lagrangian. 
+\begin{align}
+ \cL~=~\bar{\psi}i\cD_mu \gamma^mu \psi, ~~~~~~~~
+ \cD = \partial + ig A^a T^a + ig_x Q_x B^x, 
+\end{align}
+
+
+
+\subsubsection*{Quark mass}
+
+As \emph{universal} embedding is excluded already, we are discussing only about \emph{anomaly-free} embedding.
+Because the third generation quarks sector have different expression from the other two generations,
+the Lagrangian of the Yukawa interacion for quarks have also different expression according to the generations,
+which is given by
+\begin{align}
+ \cL_3 ~=&~~ \lam_1^t it_1^c \Phi_1^\dagger Q_3 + \lam_2^t it_2^c \Phi_2^\dagger Q_3 
+ + \frac{\lam_b^m}{\Lam} id_m^c \eps_{ijk}\Phi_1^i \Phi_2^j Q_3^k + {\rm{h.c.}} \nonumber \\
+ \cL_{1,2}~ =&~~ \lam_1^{dn} id_i^{nc} Q_n^T \Phi_1 + \lam_2^{dn} id_2^{nc} Q_n^T \Phi_2 
+ + \frac{\lam_u^{mn}}{\Lam} iu_m^c \eps_{ijk} \Phi_1^{*i} \Phi_2^{*j} Q_n^k + {\rm{h.c.}}
+ \end{align}
+where $n= 1,2$ that is index of first and second generation; $m=1,2,3$ referring also to the generation indeices; and $i,j,k=1,2,3$. %\eq{gaugegroup} 
+% $n$ refers to the indices of the gauge group $(SU_1(3)\times U_1(1) \times SU_2(3)\times U_2(1))$.
+The linear combinations of $t_{1,2}^c$ form the states for heavy top partner $T^c$ and $t^c$ and similarly 
+$d_{1,2}^{nc}$ form that of $D^c,~d^c$ with $n=1$ and $S^c,~s^c$ with $n=2$.
+
+The heavy quark $T^c$ state are orthogonal to $t^c$ states as 
+\begin{align}
+ T^c~=~\frac{\lam_1^t c_\beta u_1^c + \lam_2^t s_\beta u_2^c}{\sqrt{\lam_1^{t2} c_\beta^2 + \lam_2^{t2} s_\beta^2}}, ~~~~~ 
+ t^c~=~\frac{-\lam_2^t s_\beta u_1^c + \lam_1^t c_\beta u_2^c}{\sqrt{\lam_1^{t2} c_\beta^2 + \lam_2^{t2} s_\beta^2}},
+\end{align}
+where the $\beta$ of $s_\beta,~c_\beta$ is $\arctan(f1/f2)$ and $\lam_{1,2}^t$ is the Yukawa coupling constant of top of the group $SU_{1,2}(3)$.
+The coupling of $T^c$ to $T$ gives rise to its mass leaving $t^c$ massless
+\begin{align}
+ M_T = ~~f \sqrt{\lam_1^{t2} c_\beta^2 + \lam_2^{t2} s_\beta^2}.
+\end{align}
+
+Also, $D^c,~d^c$ consist of $d_{1,2}^{1c}$($d_{1,2}^c$) and $S^c,~s^c$ consist of $d_{1,2}^{2c}$($s_{1,2}^{c}$) which are expressed by
+\begin{align}
+ D^c~=~\frac{\lam_1^d c_\beta d_1^{c} + \lam_2^d s_\beta d_2^{c}}{\sqrt{\lam_1^{d2} c_\beta^2 + \lam_2^{d2} s_\beta^2}}, ~~~~~
+ d^c~=~\frac{-\lam_1^d s_\beta d_1^{c} + \lam_1^d c_\beta d_2^{c}}{\sqrt{\lam_1^{d2} c_\beta^2 + \lam_2^{d2} s_\beta^2}} \nonumber\\
+% \end{align}
+% \begin{align}
+ S^c~=~\frac{\lam_1^s c_\beta s_1^{c} + \lam_2^s s_\beta s_2^{c}}{\sqrt{\lam_1^{s2} c_\beta^2 + \lam_2^{s2} s_\beta^2}}, ~~~~~
+ s^c~=~\frac{-\lam_1^s s_\beta s_1^{c} + \lam_1^s c_\beta s_2^{c}}{\sqrt{\lam_1^{s2} c_\beta^2 + \lam_2^{s2} s_\beta^2}} .
+%  S^c~=~\frac{\lam_1^d c_\beta d_1^{2c} + \lam_2^d s_\beta d_2^{2c}}{\sqrt{\lam_1^{d2} c_\beta^2 + \lam_2^{d2} s_\beta^2}}, ~~~~~
+%  s^c~=~\frac{-\lam_1^d s_\beta d_1^{2c} + \lam_1^d c_\beta d_2^{2c}}{\sqrt{\lam_1^{d2} c_\beta^2 + \lam_2^{d2} s_\beta^2}} 
+\end{align}
+And each $D^c$ and $S^c$ couples to $D$ and $S$, which give them masses as 
+\begin{align}
+ M_D=f\sqrt{\lam_1^{d2} c_\beta^2 + \lam_2^{d2} s_\beta^2},~~~M_S=f\sqrt{\lam_1^{s2} c_\beta^2 + \lam_2^{s2} s_\beta^2}
+\end{align}
+again leaving $d^c$ and $s^c$ as massless states.
+
+After EWSB, the Lagrangian about the quark mass terms are 
+\begin{align}
+  \cL_{\rm{up~mass}}~=~& -M_T T^c T + \frac{v}{\sqrt{2}} \frac{s_\beta c_\beta (\lam_1^{t2}-\lam_2^{t2})}{\sqrt{\lam_1^{t2} c_\beta^2 + \lam_2^{t2}s_\beta^2}}T^c t
+         - \frac{v}{\sqrt{2}} \frac{\lam_1^t \lam_2^t}{\sqrt{\lam_1^{t2} c_\beta^2 + \lam_2^{t2} s_\beta^2}}t^c t \nonumber\\
+         &+\frac{v}{\sqrt{2}}\frac{f}{\Lam}\lam_u^{mn}u_m^c u_n + {\rm{h.c.}} \label{eq:massLagup}\\
+ \cL_{\rm{down~mass}}~=~& -M_D D^c D - \frac{v}{\sqrt{2}} \frac{s_\beta c_\beta (\lam_1^{d2}-\lam_2^{d2})}{\sqrt{\lam_1^{d2} c_\beta^2 + \lam_2^{d2}s_\beta^2}}D^c d
+         + \frac{v}{\sqrt{2}} \frac{\lam_1^d \lam_2^d}{\sqrt{\lam_1^{d2} c_\beta^2 + \lam_2^{d2} s_\beta^2}} d^c d \nonumber\\
+                        & -M_S S^c S - \frac{v}{\sqrt{2}} \frac{s_\beta c_\beta (\lam_1^{s2}-\lam_2^{s2})}{\sqrt{\lam_1^{s2} c_\beta^2 + \lam_2^{s2}s_\beta^2}}S^c s
+         + \frac{v}{\sqrt{2}} \frac{\lam_1^s \lam_2^s}{\sqrt{\lam_1^{s2} c_\beta^2 + \lam_2^{s2} s_\beta^2}} s^c s \nonumber\\
+         & +\frac{v}{\sqrt{2}}\frac{f}{\Lam}\lam_b^{m} d_m^c b + {\rm{h.c.}} \label{eq:massLagdown}
+\end{align}
+ where $u_n$=u,c; $u_m^c=u^c,c^c,t^c,T^c$; and $d_m^c=d^c,s^c,b^c,D^c,S^c$.
+ % Now let us have a look details of the last term of \eqs{massLagup}{massLagdown}. 
+The terms with coefficients $\lam_u^{mn}$ and $\lam_b^m$ cause the mixing of terms between different generation quarks in up and down sectors leading to the CKM matrix. 
+% And similarly, the SM quarks mass eigenstates are mixed with that of heavy quarks $D,~S$ and $T$ leading to the analogous matrix, 
+% two of which play roles in the interactions between quarks and gauge bosons.
+% Additionally, mixing terms between heavy left-handed quarks $D,S,T$ and SM quarks are caused by EWSB.
+To convert the flavour basis of quarks to the mass basis ones, we need the CKM matrix;
+\begin{align}
+  V^u \left( \begin{array}{c}  u'\\  c' \\  t' \end{array}\right) ~=~\left( \begin{array}{c}  u \\  c \\  t \end{array}\right), ~~~~~~~~~
+  V^d \left( \begin{array}{c}  d'\\  s' \\  b' \end{array}\right) ~=~\left( \begin{array}{c}  d \\  s \\  b \end{array}\right) 
+\end{align}
+where primed fields, $u'$s, are referring to flavour basis and unprimed ones, $u$s, are mass bases. $V^u$ and $V^d$ form the CKM matrix:
+\begin{align}
+ V^{\rm{CKM}}~=~V^u V^{d\dagger}
+\end{align}
+% \more{from\cite{Han:2005ru}, there are two physically meaningful mixing matrices.... MAYBE dl ekdmadp skdhsms $\delta$fkd $V_{ij}$ dlfjsrjsrk?}
+To prevent from confused about mixing matrices for quarks, it would be better to mention briefly about them.
+There are two mixing matrices; one is the CKM matrix $V^{CKM}$ we just discussed, which includes mixing informaiton among the flavour and mass bases.
+And the other one is caused from Electroweak symmetry breaking (EWSB) among the interaction basis and mass eigenstate. 
+
+% {The mixing terms} between the heavy left-handed quarks $D,S,T$ and the SM qaurks are induced by EWSB. 
+\paragraph{The mixing of up quark sector} is induced by EWSB as just mentioned.
+By the mixing terms of $T$ and $u,~c,~t$ in \eq{massLagup}, $SU(3)$ symmetry is violated. 
+Let us have a look in detail about the mass bases of quarks.
+The $SU(3)$ state $T_0$ before EWSB can be expressed in terms of the mass eigenstate $T$ with mixing terms induced by EWSB 
+as $T_0~=~T+\delta_{u_i}u_i'$ with $i=1,2,3$, of which $\delta_{u_i}$ are given by
+\begin{align}
+ \delta_u = \frac{v}{\sqrt{2}\Lam}\frac{\lam_u^{T^c u}}{\sqrt{\lam_1^{t2}c_\beta^2 + \lam_2^{t2} s_\beta^2}}, ~~
+ \delta_c = \frac{v}{\sqrt{2}\Lam}\frac{\lam_u^{T^c c}}{\sqrt{\lam_1^{t2}c_\beta^2 + \lam_2^{t2}s_\beta^2}},~~
+ \delta_t = \frac{v}{\sqrt{2}f}\frac{s_\beta c_\beta (\lam_1^{t2} - \lam_2^{t2} )}{\sqrt{\lam_1^{t2}c_\beta^2 + \lam_2^{t2}s_\beta^2}}.
+\end{align}
+
+To have the mixing terms of $T$ to $u$ and $c$ suppressed, we take the couplings $\lam_u^{T^c u}$ and $\lam_u^{T^c c}$ small enough to neglect these mixing terms.
+With neglecting them, the relation of the mass eigenstate and the interaction ones becomes
+\begin{align}
+T_0 = T+ \Delta_{u_i} u_i, ~~~~~~~~~~~~~~~~ \Delta_{u_i} = V_{ij}^{u*} \delta_{u_j} \simeq V_{i3}^{u*} \delta_t. 
+\end{align}
+The up quarks can be expressed as 
+\begin{align}
+ u_{i0} = (1-\frac{1}{2}|\Delta_{u_i}|^2)u_i - \Delta_{u_i} T,
+\end{align}
+where we expect corrections to $\Delta_{u_i}$ from the precisely measured couplings of quarks to the $W$ boson.
+
+
+\paragraph{In the down quark sector}, the story is similar. 
+The $SU(3)$ state $D_0$ and $S_0$ which are the state before EWSB can be written in terms of the mass eigenstates $D$, $S$ and the SM fermions
+in the interacion basis as 
+\begin{align}
+ D_0=D+\delta_{Dd_i}d_i', ~~~~~~S_0=S+\delta_{Sd_i} d_i'
+\end{align}
+where $i=1,~2,~3$ and
+\begin{align}
+ &\delta_{Dd} =\frac{-v}{\sqrt{2}f}\frac{s_\beta c_\beta (\lam_1^{d2} - \lam_2^{d2} )}{\sqrt{\lam_1^{d2}c_\beta^2 + \lam_2^{d2}s_\beta^2}},~~~~~~~~
+ \delta_{Ds}=0,
+ &\delta_{Db} =\frac{v}{\sqrt{2}\Lam}\frac{\lam_b^{D^c}}{\sqrt{\lam_1^{d2}c_\beta^2 + \lam_2^{d2}s_\beta^2}},\\ 
+ &\delta_{Sd}=0,  ~~~~~~~~
+ \delta_{Ss} =\frac{-v}{\sqrt{2}f}\frac{s_\beta c_\beta (\lam_1^{s2} - \lam_2^{s2} )}{\sqrt{\lam_1^{s2}c_\beta^2 + \lam_2^{s2}s_\beta^2}} 
+ &\delta_{Sb} =\frac{v}{\sqrt{2}\Lam}\frac{\lam_b^{S^c}}{\sqrt{\lam_1^{s2}c_\beta^2 + \lam_2^{s2}s_\beta^2}}.  
+\end{align}
+Thanks to the collective symmetry breaking mechanism, the mixing between $D-s$ and $S-d$ became zero. 
+\more{a consequence of the collective breaking mass generation for d and s in the D,S mass basis fkd wjrjfkd rkxdmsakfdlswlwha todrkrgoqhkidgk gkfemt}
+To let the mixing of $D$, $S$ with $b$ quark suppressed, we assume $\lam_b^{D^c}$ and $\lam_b^{S^c}$ to be small. 
+Also, to be consistent with the SM, one of $\lam_{1,2}^d$ and $\lam_{1,2}^s$ are expected to be small from \eq{massLagdown},
+which can result in the tiny mixing effects in the down quark sector like the mixing effects in the neutrino sector.
+Then, \begin{align}
+       \delta_{Dd} \simeq \delta_{Ss} \simeq \frac{v}{\sqrt{2}t_\beta f} = -\delta_\nu .
+      \end{align}
+      
+
+ The $D$      and $S$ states become 
+ \begin{align}
+  D_0 = D + \Delta_{Dd_i}d_i , ~~~~~ \Delta_{Dd_i}=V_{ij}^{d*} \delta_{Dd_j} \simeq -V_{i1}^{d*} \delta_\nu \nonumber \\
+  S_0 = S + \Delta_{Sd_i}d_i , ~~~~~ \Delta_{Sd_i}=V_{ij}^{d*} \delta_{Sd_j} \simeq -V_{i2}^{d*} \delta_\nu 
+ \end{align}
+ Considering the mixings, the down quarks in the mass basis become 
+ \begin{align}
+  d_{i0}=(1-\frac{1}{2}|\Delta_{Dd_i}|^2 - \frac{1}{2}|\Delta_{Sd_i}|^2)d_i -\Delta_{Dd_i}D - \Delta_{Sd_i}S, 
+ \end{align}
+ where $|\Delta_{Dd_i}|^2$ and $|\Delta_{Sd_i}|^2$ terms are left of order $v^2/f^2$. 
+
+      
+
+\subsubsection*{Couplings of quarks to scalar particles }
+
+% Now we have a look at the coulings between new heavy quark pairs $D,~S,~T$ and scalar particles $H~\eta$; o
+
+\paragraph{The couplings of $T,~D,$ and $S$ quark pairs to the scalars, $H$ and $\eta$} cause the flavour changing couplings \more{ explain moremore}
+
+\begin{align}
+ \cL_{T^c T} \simeq &(H T^c T) \frac{v}{f} [(\lam_1^{t2}s_\beta^2 + \lam_2^{t2}c_\beta^2)\frac{f}{2M_T} - s_\beta^2 c_\beta^2(\lam_1^{t2} - \lam_2^{s2})^2\frac{f^3}{2M_T^3}  ]\nonumber\\
+  & (i\eta T^c T) s_\beta c_\beta (\lam_1^{t2} - \lam_2^{s2}) \frac{f}{2M_T} + {\rm{h.c.}} 
+\end{align}
+with neglecting $\lam_u^{T^c u}$ and $\lam_u^{T^c c}$.
+
+Similarly, $D$ and $S$ quark pairs 
+\begin{align}
+ \cL_{D_m^c D} \simeq (i\eta D^c D) \frac{c_\beta \lam_2^{d}}{\sqrt{2}}  + (i\eta S^c S) \frac{c_\beta \lam_2^s}{\sqrt{2}}+ {\rm{h.c.}},  
+\end{align}
+where \more{why we ignore the terms with $\lam_1^d$}
+
+
+\paragraph{The couplings of one $T$ quark and one SM quark} are 
+\begin{align}
+ \cL \simeq (HT^c u_i) [s_\beta c_\beta (\lam_1^{t2} - \lam_2^{t2})\frac{f}{\sqrt{2}M_T} V_{i3}^{u*} ] 
+ - (i\eta t^c T) [\frac{\lam_1^t \lam_2^t}{\sqrt{2}M_T} ] + {\rm{h.c.}}
+\end{align}
+where 
+
+\subsubsection*{Couplings of quarks to gauge bosons } 
+% \more{If I assume ther is no flavor mixing between different generations of fermions, then the mixing becomes much simpler like in \emph{Andreathesis}.}
+%From \mycite{Han:2005ru}, 
+Assuming that there is no flavour mixing between fermions, we can check the possible $Z'$ couplings to fermions in \tbl{Zff}.
+Interestingly, $Z'$ boson induced from $SU(3)\times U(1)$ like the Simplest Little Higgs has the interacion couplings as free parameters. \more{need to check if this is correct.} 
+If the group is bigger than $SU(3)\times U(1)$, for example $SU(4)\times U(1)$, the coupling coefficients of $Z'$ and $Z''$ become constraints each other.
+Besides, including the flavour changing sectors, the coupling terms of $Z'$ to quarks are
+\begin{align}
+ \cL_{Z'}~\supset~ -\frac{g}{c_W}\frac{Z_\mu'}{\sqrt{3-4s_W^2}}\huge[ (-&\frac{1}{2}+\frac{2}{3}s_W^2)(\bar{u_i}\gamma^\mu u_i  + \bar{d_i}\gamma^\mu d_i) \nonumber \\
+ &+ (1-s_W^2)(V_{i3}^u V_{3j}^{u\dagger}\bar{u_i}\gamma^\mu u_j + V_{i3}^d V_{3j}^{d\dagger}\bar{d_i}\gamma^\mu d_j) \huge] 
+\end{align}
+where the last two terms are flavour mixing terms for up- and down-type quarks with $V_{i3}^u V_{3j}^{u\dagger}$ and $V_{i3}^d V_{3j}^{d\dagger}$.
+
+\begin{table} %[h]
+\begin{center}
+  \begin{tabular}{| c | c |}
+    \hline
+    $Z'\bar{t}t$ &$-\frac{ig}{c_W\sqrt{3-4s_W^2}}[(\frac{1}{2}-\frac{1}{3}s_W^2) P_L + \frac{2}{3}s_W^2P_R]$ \\[5pt] \hline
+    $Z'\bar{b}b$ &$-\frac{ig}{c_W\sqrt{3-4s_W^2}}[(\frac{1}{2}-\frac{1}{3}s_W^2) P_L - \frac{1}{3}s_W^2P_R]$  \\[5pt] \hline
+    $Z'\bar{u}u$ &$-\frac{ig}{c_W\sqrt{3-4s_W^2}}[(-\frac{1}{2}+\frac{2}{3}s_W^2) P_L + \frac{2}{3}s_W^2P_R]$  \\[5pt] \hline
+    $Z'\bar{d}d$ &$-\frac{ig}{c_W\sqrt{3-4s_W^2}}[(-\frac{1}{2}+\frac{2}{3}s_W^2) P_L - \frac{1}{3}s_W^2P_R]$  \\[5pt] \hline
+    $Z'\bar{e}e$ &$-\frac{ig}{c_W\sqrt{3-4s_W^2}}[(-\frac{1}{2}-s_W^2) P_L - s_W^2P_R]$  \\[5pt] \hline    
+    $Z'\bar{\nu}\nu$ &$-\frac{ig}{c_W\sqrt{3-4s_W^2}}[(-\frac{1}{2}-s_W^2) P_L ]$  \\[5pt] \hline    
+  \end{tabular}
+  \caption{$Z'$-fermions interactions ignoring the flavour misalignments}
+  \label{tab:Zff}
+\end{center}
+ \end{table}
+        
+
+
+The couplings of $X^\mp,~Y^0$ and $\bar{Y^0}$ to fermions are shown in \tbl{XYff} when flavour misalignments and CKM mixing are ignored.
+On the other hand, when taking into account the flavour misalignment and the CKM mixing, 
+the Lagrangian is given by
+\begin{align}
+ \cL_{X,Y}~=~ -\frac{g}{\sqrt{2}}\huge{\{} &iX_\mu^- \bar{d}_i\gamma^\mu [V_i3^d T + (\Delta_{uj}V_{i3}^d + \Delta_{Dd_i}^* V_{j1}^{u*} + \Delta_{Sd_i}^* V_{j2}^{u*})u_j] \nonumber \\ 
+ & +iX_\mu^+ \bar{u}_i\gamma^\mu V_{ij}^u D_j + i Y_\mu^{0} \bar{u}_i\gamma^\mu (V_{i3^u} T + \Delta_{uk} V_{i3}^u u_k) \nonumber \\ 
+ & +i \bar{Y}_\mu^0\bar{d}_i\gamma^\mu [V_{ij}^d D_j + (\Delta_{Dd_k}V_{i1}^d +\Delta_{Sd_k}V_{i2}^d)d_k  ]~ +~{\rm{h.c.}} \huge{\}}
+\end{align}
+\more{Should explain what $\Delta$s are. }
+        
+        
+\begin{table} %[h]
+\begin{center}
+  \begin{tabular}{| c | c | }
+    \hline
+    $X_\mu^-\bar{b}t$ &$\frac{g}{\sqrt{2}} \delta_t \gamma_\mu P_L $ \\ \hline
+    $X_\mu^-\bar{d}u$ &$\frac{g}{\sqrt{2}} \delta_\nu \gamma_\mu P_L $ \\ \hline
+    $X_\mu^-\bar{e}\nu$ &$\frac{g}{\sqrt{2}} \delta_\nu \gamma_\mu P_L $ \\ \hline    
+        $Y_\mu^0\bar{t}t$ &$\frac{g}{\sqrt{2}} \delta_t \gamma_\mu P_L $ \\ \hline
+    $Y_\mu^0\bar{u}u$ &$0$ \\ \hline
+    $Y_\mu^0\bar{d}d$ &$\frac{g}{\sqrt{2}} \delta_\nu \gamma_\mu P_L $ \\ \hline
+    $Y_\mu^0\bar{e}e$ &$0$ \\ \hline
+    $Y_\mu^0\bar{\nu\nu}t$ &$\frac{g}{\sqrt{2}} \delta_\nu \gamma_\mu P_L $ \\ \hline
+    $Y_\mu^0H\eta$ &$\frac{ig}{2\sqrt{2}} (p_\eta - p_H)_\mu $ \\ \hline
+  \end{tabular}
+  \caption{$X,~Y$-fermions interactions neglecting flavour misalignments}
+  \label{tab:XYff}
+\end{center}
+ \end{table}
+        
+
+
+\subsection{Phenomenology of SLH}
+\subsubsection*{Pseudo-axion}
+\cite{Kilian:2004pp} \more{is the reference for this section. introduce some content of this paper
+and then I can put some plot of this pseudo scalar}
+If one of $U(1)$ is not gauged, another pseudo-Goldston boson is left, not eaten.
+This is $\eta$. 
+$\eta$ earns its mass from Coleman-Weinberg potential which is related term 
+with SM-like Higgs mass. 
+\begin{align}
+ M_\eta = Coupling\times \log (\frac{M_t^2}{M_{Z_H}^2}) ...
+\end{align}
+
+Since we know Higgs mass, another constraint for this is given. 
+
+
+
+\subsubsection*{Heavy gauge bosons}
+
+$Y^0,~\bar{Y^0}$ and $X^\mp$($Z_H$ and $W_H$) appear in other bsm scenarios frequently. 
+
